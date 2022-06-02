@@ -1,0 +1,65 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun May 22 23:00:58 2022
+# Process ID: 9024
+# Current directory: D:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6336 D:\e1_library\e1_key_led_plat2\key_led_pl_core\key_led_v2_2.cores\key_led_v2_12.cores\key_led_v2_12_core.xpr
+# Log file: D:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores/vivado.log
+# Journal file: D:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores\vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-1460] Use of init.tcl in C:/Users/FJB/AppData/Roaming/Xilinx/Vivado/init.tcl is deprecated. Please use Vivado_init.tcl 
+Sourcing tcl script 'C:/Users/FJB/AppData/Roaming/Xilinx/Vivado/init.tcl'
+start_gui
+open_project D:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores/key_led_v2_12_core.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores'
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores/key_led_v2_12_core.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/software_fpga/xilinx_software/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:05 . Memory (MB): peak = 1257.375 ; gain = 0.000
+update_compile_order -fileset sources_1
+set_property used_in_synthesis true [get_files  {D:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores/src/physic.xdc D:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores/src/timing.xdc}]
+ipx::open_ipxact_file {D:\e1_library\e1_key_led_plat2\key_led_pl_core\key_led_v2_2.cores\key_led_v2_12.cores\component.xml}
+WARNING: [IP_Flow 19-5226] Project source file 'd:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores/component.xml' ignored by IP packager.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_anylanguagesynthesis (Synthesis)': File 'd:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores/src/key_led_blck.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-4308] Project file 'd:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores/src/physic.xdc' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-4308] Project file 'd:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores/src/timing.xdc' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_anylanguagebehavioralsimulation (Simulation)': File 'd:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores/src/key_led_blck.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_implementation (Implementation)': File 'd:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores/src/physic.xdc' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_implementation (Implementation)': File 'd:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores/src/timing.xdc' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+ipx::merge_project_changes ports [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'd:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores/component.xml' ignored by IP packager.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'cstate' has a dependency on the module local parameter or undefined parameter 'IDLE'.
+INFO: [IP_Flow 19-4821] For module 'key_led_blck', parameter 'MD_PRESS' is inferred to be bitString format.
+INFO: [IP_Flow 19-4821] For module 'key_led_blck', parameter 'MD_LIGHT' is inferred to be bitString format.
+set_property core_revision 7 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+WARNING: [IP_Flow 19-3157] Bus Interface 'i_rst_n': Bus parameter POLARITY is ACTIVE_LOW but port 'i_rst_n' is not *resetn - please double check the POLARITY setting.
+WARNING: [IP_Flow 19-5661] Bus Interface 'i_sys_clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-801] The last file in file group "Synthesis" should be an HDL file: "src/timing.xdc".  During generation the IP Flow uses the last file to determine library and other information when generating the top wrapper file.  If possible, please make sure that non-HDL files are located earlier in the list of files for this file group.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'd:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores'
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores/key_led_v2_12_core.runs/synth_1
+
+launch_runs synth_1 -jobs 15
+[Sun May 22 23:07:46 2022] Launched synth_1...
+Run output will be captured here: D:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores/key_led_v2_12_core.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores/key_led_v2_12_core.runs/synth_1
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May 22 23:08:21 2022...

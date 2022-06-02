@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="key_led_v02_0" location="D:/e1_library/e1_key_led_plat2/key_led_ps_sys/key_led_v02_0" platform="D:/e1_library/e1_key_led_plat2/key_led_ps_sys/key_led_v2_22_wrapper_top0/export/key_led_v2_22_wrapper_top0/key_led_v2_22_wrapper_top0.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="key_led_v02_0_system" sysConfig="key_led_v2_22_wrapper_top0" runtime="C/C++" cpu="standalone_domain" cpuInstance="psu_cortexa53_0" os="standalone" mssSignature="239a6e38c79875ed2bc002635e37206d">
+  <configuration name="Debug" id="xilinx.gnu.arm.a53.exe.debug.1710592540">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.arm.a53.exe.release.1864114310" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

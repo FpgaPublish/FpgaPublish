@@ -1,0 +1,7 @@
+# version of key_led_v2_00:
+* Number of version in level:
+ 0~9:1000000000
+* file tower
+v0.01--[key_ctrl](D:/e1_library/e1_key_led_plat2/key_led_pl_demo/key_led_v2_00.srcs/sources_1/new/key_ctrl.v): File Created
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        

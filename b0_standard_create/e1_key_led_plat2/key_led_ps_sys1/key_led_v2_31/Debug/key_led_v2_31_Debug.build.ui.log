@@ -1,0 +1,26 @@
+2022-06-02T22:41:38.764375500255-22:41:38 **** Incremental Build of configuration Debug for project key_led_v2_31 ****
+000-make all 
+000-'Building file: ../src/key_led_blck/key_led_ctrl.c'
+000-'Invoking: ARM v8 gcc compiler'
+000-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/key_led_blck/key_led_ctrl.o" -ID:/e1_library/e1_key_led_plat2/key_led_ps_sys1/key_led_v2_22_wrapper_top0/export/key_led_v2_22_wrapper_top0/sw/key_led_v2_22_wrapper_top0/standalone_domain/bspinclude/include -MMD -MP -MF"src/key_led_blck/key_led_ctrl.d" -MT"src/key_led_blck/key_led_ctrl.o" -o "src/key_led_blck/key_led_ctrl.o" "../src/key_led_blck/key_led_ctrl.c"
+000-'Finished building: ../src/key_led_blck/key_led_ctrl.c'
+000-' '
+000-'Building file: ../src/key_led_main.c'
+000-'Invoking: ARM v8 gcc compiler'
+000-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/key_led_main.o" -ID:/e1_library/e1_key_led_plat2/key_led_ps_sys1/key_led_v2_22_wrapper_top0/export/key_led_v2_22_wrapper_top0/sw/key_led_v2_22_wrapper_top0/standalone_domain/bspinclude/include -MMD -MP -MF"src/key_led_main.d" -MT"src/key_led_main.o" -o "src/key_led_main.o" "../src/key_led_main.c"
+000-'Finished building: ../src/key_led_main.c'
+000-' '
+000-'Building target: key_led_v2_31.elf'
+000-'Invoking: ARM v8 gcc linker'
+000-aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/e1_library/e1_key_led_plat2/key_led_ps_sys1/key_led_v2_22_wrapper_top0/export/key_led_v2_22_wrapper_top0/sw/key_led_v2_22_wrapper_top0/standalone_domain/bsplib/lib -o "key_led_v2_31.elf"  ./src/key_led_blck/key_led_ctrl.o ./src/key_led_blck/key_led_driv.o  ./src/key_led_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-'Finished building target: key_led_v2_31.elf'
+000-' '
+000-'Invoking: ARM v8 Print Size'
+000-aarch64-none-elf-size key_led_v2_31.elf  |tee "key_led_v2_31.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000- 109271	   4552	  20765	 134588	  20dbc	key_led_v2_31.elf
+000-'Finished building: key_led_v2_31.elf.size'
+000-' '
+00255-
+22:41:39 Build Finished (took 779ms)
+

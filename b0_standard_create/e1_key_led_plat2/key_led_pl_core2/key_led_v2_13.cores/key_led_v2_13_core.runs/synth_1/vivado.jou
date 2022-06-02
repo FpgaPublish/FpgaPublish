@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue May 24 22:27:54 2022
+# Process ID: 6496
+# Current directory: D:/e1_library/e1_key_led_plat2/key_led_pl_core2/key_led_v2_22.cores/key_led_v2_13.cores/key_led_v2_13_core.runs/synth_1
+# Command line: vivado.exe -log key_led_blck.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source key_led_blck.tcl
+# Log file: D:/e1_library/e1_key_led_plat2/key_led_pl_core2/key_led_v2_22.cores/key_led_v2_13.cores/key_led_v2_13_core.runs/synth_1/key_led_blck.vds
+# Journal file: D:/e1_library/e1_key_led_plat2/key_led_pl_core2/key_led_v2_22.cores/key_led_v2_13.cores/key_led_v2_13_core.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source key_led_blck.tcl -notrace

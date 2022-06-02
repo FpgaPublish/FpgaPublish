@@ -1,0 +1,118 @@
+<mxfile host="65bd71144e" pages="3">
+    <diagram id="HrKo_eKujefO3dNRXb7b" name="demo">
+        <mxGraphModel dx="322" dy="437" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="9ur5HrtdNuBj-eb-75km-1" value="LED" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="177" y="51" width="140" height="104" as="geometry"/>
+                </mxCell>
+                <mxCell id="9ur5HrtdNuBj-eb-75km-2" value="实现对应的状态" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="9ur5HrtdNuBj-eb-75km-1" vertex="1">
+                    <mxGeometry y="26" width="140" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="9ur5HrtdNuBj-eb-75km-3" value="使用标准设计流程" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="9ur5HrtdNuBj-eb-75km-1" vertex="1">
+                    <mxGeometry y="52" width="140" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="9ur5HrtdNuBj-eb-75km-4" value="要求全流程脚本记录" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="9ur5HrtdNuBj-eb-75km-1" vertex="1">
+                    <mxGeometry y="78" width="140" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="9ur5HrtdNuBj-eb-75km-5" value="KEY" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="140" width="140" height="104" as="geometry"/>
+                </mxCell>
+                <mxCell id="9ur5HrtdNuBj-eb-75km-6" value="实现对应的形式" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="9ur5HrtdNuBj-eb-75km-5" vertex="1">
+                    <mxGeometry y="26" width="140" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="9ur5HrtdNuBj-eb-75km-7" value="提供拓展接口" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="9ur5HrtdNuBj-eb-75km-5" vertex="1">
+                    <mxGeometry y="52" width="140" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="9ur5HrtdNuBj-eb-75km-8" value="作为基础模块封装" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="9ur5HrtdNuBj-eb-75km-5" vertex="1">
+                    <mxGeometry y="78" width="140" height="26" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="DahIj4vTz0O3RCcRvH5f" name="demo2">
+        <mxGraphModel dx="1264" dy="592" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+            <root>
+                <mxCell id="6HHR4eenq_n9dRcyGoPN-0"/>
+                <mxCell id="6HHR4eenq_n9dRcyGoPN-1" parent="6HHR4eenq_n9dRcyGoPN-0"/>
+                <mxCell id="oxS9ad39l-ac_8bRw0RV-0" value="根据pl_work反馈得到应用效果不佳" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="6HHR4eenq_n9dRcyGoPN-1" vertex="1">
+                    <mxGeometry x="314" y="30" width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="oxS9ad39l-ac_8bRw0RV-2" value="问题" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="6HHR4eenq_n9dRcyGoPN-1" vertex="1">
+                    <mxGeometry x="60" y="130" width="140" height="104" as="geometry"/>
+                </mxCell>
+                <mxCell id="oxS9ad39l-ac_8bRw0RV-3" value="LED显示的区分度不高" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="oxS9ad39l-ac_8bRw0RV-2" vertex="1">
+                    <mxGeometry y="26" width="140" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="oxS9ad39l-ac_8bRw0RV-4" value="按键的异步特性被稀释" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="oxS9ad39l-ac_8bRw0RV-2" vertex="1">
+                    <mxGeometry y="52" width="140" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="oxS9ad39l-ac_8bRw0RV-5" value="两者的关联较弱,需要优化" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="oxS9ad39l-ac_8bRw0RV-2" vertex="1">
+                    <mxGeometry y="78" width="140" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="I_-mZ_iXXODx1Kulvjws-0" value="思路" style="triangle;whiteSpace=wrap;html=1;" parent="6HHR4eenq_n9dRcyGoPN-1" vertex="1">
+                    <mxGeometry x="320" y="220" width="60" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="I_-mZ_iXXODx1Kulvjws-1" value="LED负责显示信息&lt;br&gt;KEY切换显示模式" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="6HHR4eenq_n9dRcyGoPN-1" vertex="1">
+                    <mxGeometry x="435" y="245" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="I_-mZ_iXXODx1Kulvjws-2" value="不要试图采用位置去区分LED,这个不显示" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="6HHR4eenq_n9dRcyGoPN-1" vertex="1">
+                    <mxGeometry x="60" y="360" width="230" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="I_-mZ_iXXODx1Kulvjws-3" value="实际使用过程中, 要求一眼分辨" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="6HHR4eenq_n9dRcyGoPN-1" vertex="1">
+                    <mxGeometry x="60" y="410" width="180" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="I_-mZ_iXXODx1Kulvjws-4" value="改进后的功能" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="6HHR4eenq_n9dRcyGoPN-1" vertex="1">
+                    <mxGeometry x="450" y="490" width="335" height="156" as="geometry"/>
+                </mxCell>
+                <mxCell id="I_-mZ_iXXODx1Kulvjws-5" value="电源灯: 判断设备是否上电" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="I_-mZ_iXXODx1Kulvjws-4" vertex="1">
+                    <mxGeometry y="26" width="335" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="I_-mZ_iXXODx1Kulvjws-6" value="按键灯: 判断按键是否响应" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="I_-mZ_iXXODx1Kulvjws-4" vertex="1">
+                    <mxGeometry y="52" width="335" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="I_-mZ_iXXODx1Kulvjws-7" value="按键作用时间指示灯: 判断按键是否有对应的响应模式" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="I_-mZ_iXXODx1Kulvjws-4" vertex="1">
+                    <mxGeometry y="78" width="335" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="I_-mZ_iXXODx1Kulvjws-8" value="信息灯1: 快慢双拍" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="I_-mZ_iXXODx1Kulvjws-4" vertex="1">
+                    <mxGeometry y="104" width="335" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="I_-mZ_iXXODx1Kulvjws-9" value="信息灯2: 快慢双拍" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="I_-mZ_iXXODx1Kulvjws-4" vertex="1">
+                    <mxGeometry y="130" width="335" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="I_-mZ_iXXODx1Kulvjws-10" value="信息灯同时亮时表示一种情况,不同时亮时表示一种情况" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="6HHR4eenq_n9dRcyGoPN-1" vertex="1">
+                    <mxGeometry x="450" y="670" width="310" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="I_-mZ_iXXODx1Kulvjws-11" value="一慢一快: 警告信息&lt;br&gt;双慢: 正常&lt;br&gt;双快: 错误" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="6HHR4eenq_n9dRcyGoPN-1" vertex="1">
+                    <mxGeometry x="460" y="710" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="I_-mZ_iXXODx1Kulvjws-12" value="按键直接独立区分信息来源" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="6HHR4eenq_n9dRcyGoPN-1" vertex="1">
+                    <mxGeometry x="80" y="680" width="160" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="I_-mZ_iXXODx1Kulvjws-13" value="按键的位置需要确认,否则无法操作" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="6HHR4eenq_n9dRcyGoPN-1" vertex="1">
+                    <mxGeometry x="80" y="725" width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="I_-mZ_iXXODx1Kulvjws-14" value="这个模块最大的作用就是调试PL端的错误信息" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="6HHR4eenq_n9dRcyGoPN-1" vertex="1">
+                    <mxGeometry x="70" y="840" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="NxX59JiCpUXGESvhW_sJ-0" value="完成当前功能实现,最终效果略有差异" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="6HHR4eenq_n9dRcyGoPN-1">
+                    <mxGeometry x="555" y="1030" width="210" height="20" as="geometry"/>
+                </mxCell>
+                <UserObject label="key_led_work.drawio" link="../flow_work/key_led_work.drawio" id="qnMm7r0ELlvGEriDqaEU-0">
+                    <mxCell style="fontColor=#EEEEEE;fontStyle=4;rounded=1;overflow=hidden;spacing=10;strokeColor=#FFFFFF;" vertex="1" parent="6HHR4eenq_n9dRcyGoPN-1">
+                        <mxGeometry x="546.5" y="1076" width="142" height="38" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="D2pTne0WAuukNKCGSS-6" name="应用">
+        <mxGraphModel dx="641" dy="592" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="4XH6g8VKBG6QkmrWaO0O-0"/>
+                <mxCell id="4XH6g8VKBG6QkmrWaO0O-1" parent="4XH6g8VKBG6QkmrWaO0O-0"/>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

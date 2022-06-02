@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>user</spirit:library>
+  <spirit:name>key_led_blck</spirit:name>
+  <spirit:version>1.2</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>i_rst_n</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>i_rst_n</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.I_RST_N.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>i_sys_clk</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>i_sys_clk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>FREQ_TOLERANCE_HZ</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.I_SYS_CLK.FREQ_TOLERANCE_HZ">-1</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>Verilog</spirit:language>
+        <spirit:modelName>key_led_blck</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>4c421874</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>Verilog</spirit:language>
+        <spirit:modelName>key_led_blck</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>e7e031e4</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_xpgui</spirit:name>
+        <spirit:displayName>UI Layout</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:xgui.ui</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>72bfd4a7</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_implementation</spirit:name>
+        <spirit:displayName>Implementation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:implementation</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_implementation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>c299de1c</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>i_sys_clk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>i_rst_n</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>i_key_row</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.WD_KEY&apos;)) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>i_info0_data</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.WD_INFO&apos;)) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>i_info1_data</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.WD_INFO&apos;)) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.i_info1_data" xilinx:dependency="$WD_KEY > 1">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>i_info2_data</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.WD_INFO&apos;)) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.i_info2_data" xilinx:dependency="$WD_KEY > 2">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>i_info3_data</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.WD_INFO&apos;)) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.i_info3_data" xilinx:dependency="$WD_KEY > 3">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>i_info4_data</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.WD_INFO&apos;)) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.i_info4_data" xilinx:dependency="$WD_KEY > 4">false</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>i_info5_data</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.WD_INFO&apos;)) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.i_info5_data" xilinx:dependency="$WD_KEY > 5">false</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>i_info6_data</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.WD_INFO&apos;)) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.i_info6_data" xilinx:dependency="$WD_KEY > 6">false</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>o_led_row</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.WD_LED&apos;)) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>WD_KEY</spirit:name>
+        <spirit:displayName>Wd Key</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.WD_KEY">4</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>WD_LED</spirit:name>
+        <spirit:displayName>Wd Led</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.WD_LED">4</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>WD_INFO</spirit:name>
+        <spirit:displayName>Wd Info</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.WD_INFO">4</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>MD_PRESS</spirit:name>
+        <spirit:displayName>Md Press</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.MD_PRESS" spirit:bitStringLength="1">&quot;0&quot;</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>MD_LIGHT</spirit:name>
+        <spirit:displayName>Md Light</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.MD_LIGHT" spirit:bitStringLength="1">&quot;0&quot;</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>NB_DLY</spirit:name>
+        <spirit:displayName>Nb Dly</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.NB_DLY">1000000000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>NB_FAST</spirit:name>
+        <spirit:displayName>Nb Fast</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.NB_FAST">24</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>NB_SLOW</spirit:name>
+        <spirit:displayName>Nb Slow</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.NB_SLOW">26</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:choices>
+    <spirit:choice>
+      <spirit:name>choice_list_9d8b0d81</spirit:name>
+      <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
+      <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_11ec5de2</spirit:name>
+      <spirit:enumeration spirit:text="light in low voltage">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="light in high voltage">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_14e5d23b</spirit:name>
+      <spirit:enumeration spirit:text="Press to low Voltage">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="Press to high Voltage">1</spirit:enumeration>
+    </spirit:choice>
+  </spirit:choices>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/key_led_blck.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_e7e031e4</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/physic.xdc</spirit:name>
+        <spirit:userFileType>xdc</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/timing.xdc</spirit:name>
+        <spirit:userFileType>xdc</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/key_led_blck.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>xgui/key_led_blck_v1_2.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_72bfd4a7</spirit:userFileType>
+        <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_implementation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/physic.xdc</spirit:name>
+        <spirit:userFileType>xdc</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/timing.xdc</spirit:name>
+        <spirit:userFileType>xdc</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>key_led_blck_v1_2</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>WD_KEY</spirit:name>
+      <spirit:displayName>Wd Key</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.WD_KEY">4</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>WD_LED</spirit:name>
+      <spirit:displayName>Wd Led</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.WD_LED">4</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.WD_LED">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>WD_INFO</spirit:name>
+      <spirit:displayName>Wd Info</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.WD_INFO">4</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>MD_PRESS</spirit:name>
+      <spirit:displayName>Md Press</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.MD_PRESS" spirit:choiceRef="choice_pairs_14e5d23b" spirit:bitStringLength="1">&quot;0&quot;</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>MD_LIGHT</spirit:name>
+      <spirit:displayName>Md Light</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.MD_LIGHT" spirit:choiceRef="choice_pairs_11ec5de2" spirit:bitStringLength="1">&quot;0&quot;</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>NB_DLY</spirit:name>
+      <spirit:displayName>Nb Dly</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.NB_DLY" spirit:bitStringLength="32" spirit:minimum="1" spirit:maximum="1000000000" spirit:rangeType="long">1000000000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>NB_FAST</spirit:name>
+      <spirit:displayName>Nb Fast</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.NB_FAST" spirit:bitStringLength="5" spirit:minimum="0" spirit:maximum="31" spirit:rangeType="long">24</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>NB_SLOW</spirit:name>
+      <spirit:displayName>Nb Slow</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.NB_SLOW" spirit:bitStringLength="5" spirit:minimum="0" spirit:maximum="31" spirit:rangeType="long">26</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">key_led_blck_v1_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Production">virtex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qvirtex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">versal</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintex7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qkintex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qkintex7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">akintex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">artix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">artix7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">aartix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qartix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">zynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qzynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">azynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">spartan7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">aspartan7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">virtexu</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">zynquplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">virtexuplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">virtexuplusHBM</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">virtexuplus58g</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintexuplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintexu</xilinx:family>
+      </xilinx:supportedFamilies>
+      <xilinx:taxonomies>
+        <xilinx:taxonomy>/UserIP</xilinx:taxonomy>
+      </xilinx:taxonomies>
+      <xilinx:displayName>key_led_blck_v1_2</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:coreRevision>7</xilinx:coreRevision>
+      <xilinx:upgrades>
+        <xilinx:canUpgradeFrom>xilinx.com:user:key_led_blck:1.0</xilinx:canUpgradeFrom>
+      </xilinx:upgrades>
+      <xilinx:coreCreationDateTime>2022-05-22T15:01:47Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1b486d40_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_work2/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4de65003_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_work2/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@42cbcb42_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_work2/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@444b589f_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_work2/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4132275c_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_work2/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5f94a30d_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_work2/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2329d53b_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_work2/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@e299e8b_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_work2/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4893a75b_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_work2/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@76e13ce5_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_work2/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5450a1af_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_work2/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@22fc1b5e_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_work2/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@410f1101_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_work2/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5abc6de1_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_work2/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@22656c1c_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_work2/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@291570ae_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_work2/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@72c9fe88_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_work2/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4e5596f4_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_work2/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@30026d15_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_work2/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@50a60d3_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_work2/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@51619fc_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_work2/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@72408a9b_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_work2/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@41272641_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_work2/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@65e8b711_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_work2/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@cf5e726_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_work2/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@76b42495_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_work2/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@288490f5_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_work2/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1be62eb8_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_work2/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1c5a95e3_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_work2/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@32dcc626_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_work2/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2bb6c310_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_work2/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@40b35b83_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_work2/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@56ebd97e_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_work2/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@74378902_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_work2/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@424c7cd_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_work2/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@12981c8d_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6eefb85_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6a950489_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7a94fd7a_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7a283480_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@792af26c_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4cc3cbc3_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@247f3b86_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6ae88d96_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4feefad7_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@27f2fd05_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@62f81e8_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@41cb3e1f_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@23093eac_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1fbd6ecc_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@563f8d6e_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1a46c8cb_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@501de3cf_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@51401018_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@13867896_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@11c847d1_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1e1f1cb9_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@cbccd1b_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5cb18d47_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@443784e7_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1a47e64_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@36a15aa4_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@79b0a845_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@39cd21cf_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5b541bd3_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@637aa55f_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5a223d3f_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4f50d8a4_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5a3fe7e5_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4622e6ef_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6c5e7f14_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4cfd2865_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@606eaa78_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@315c0cb4_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@f0820c1_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@51cf4b7f_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1c562f0f_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@10321d2d_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5166d475_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3cbd1c21_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@224cd654_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5506fa8f_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1df7133f_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@78ea319f_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7a0515bb_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7508c838_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@124a0a72_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3debf7df_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@732e107b_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@126bb599_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@66e6df41_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@411a21c2_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@72f22a38_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@384563af_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@75849370_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@61e9083c_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@90c61ad_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7df837b_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2d52337e_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2df1ca8f_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@683a90b3_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@eb5de3b_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@c54f304_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@28eccaac_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2578d7b1_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4f1dd341_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@215e8fdc_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@39bd4bad_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5ca9788e_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2c2f637e_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@49e1907c_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@52754099_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7164ff3_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@48ae56e_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@18f7eeb0_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1aef07d0_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@172557a_ARCHIVE_LOCATION">d:/e1_library/e1_key_led_plat2/key_led_pl_core/key_led_v2_2.cores/key_led_v2_12.cores</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2021.1</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="e8d45643"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="0f31534f"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="ea1b2c48"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="d6e4ce88"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="421ba34f"/>
+      <xilinx:targetDRCs>
+        <xilinx:targetDRC xilinx:tool="ipi">
+          <xilinx:targetDRCOption xilinx:name="ignore_freq_hz" xilinx:value="true"/>
+        </xilinx:targetDRC>
+      </xilinx:targetDRCs>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>
