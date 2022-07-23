@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="light_sys_v0_32_udp" location="D:/e1_library/f1_light_eye_plat/light_eye_ps_sys2/light_sys_v0_32_udp" platform="D:/e1_library/f1_light_eye_plat/light_eye_ps_sys2/key_led_v2_22_wrapper_top0/export/key_led_v2_22_wrapper_top0/key_led_v2_22_wrapper_top0.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="light_sys_v0_32_udp_system" sysConfig="key_led_v2_22_wrapper_top0" runtime="C/C++" cpu="standalone_domain" cpuInstance="psu_cortexa53_0" os="standalone" mssSignature="d80f2e4b916aef138f1ac1b6624b1b77">
+  <configuration name="Debug" id="xilinx.gnu.arm.a53.exe.debug.683528852" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.arm.a53.exe.release.1161566961" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="lwip_udp_perf_client" hasBspSettings="true"/>
+</sdkproject:SdkProject>

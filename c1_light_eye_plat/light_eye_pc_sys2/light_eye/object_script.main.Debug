@@ -1,0 +1,11 @@
+debug/main.o
+debug/mainwindow.o
+debug/camera_blck.o
+debug/camera_driv.o
+debug/udp_blck.o
+debug/udp_driv.o
+debug/moc_mainwindow.o
+debug/moc_camera_blck.o
+debug/moc_camera_driv.o
+debug/moc_udp_blck.o
+debug/moc_udp_driv.o

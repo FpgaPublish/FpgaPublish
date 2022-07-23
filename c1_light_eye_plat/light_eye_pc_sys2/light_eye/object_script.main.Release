@@ -1,0 +1,11 @@
+release/main.o
+release/mainwindow.o
+release/camera_blck.o
+release/camera_driv.o
+release/udp_blck.o
+release/udp_driv.o
+release/moc_mainwindow.o
+release/moc_camera_blck.o
+release/moc_camera_driv.o
+release/moc_udp_blck.o
+release/moc_udp_driv.o
