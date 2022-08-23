@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>fpgaPublish</spirit:vendor>
+  <spirit:library>user</spirit:library>
+  <spirit:name>gray_driv</spirit:name>
+  <spirit:version>1.02</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>s_shk_gray</spirit:name>
+      <spirit:busType spirit:vendor="fpgaPublish.com" spirit:library="user" spirit:name="SHK" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="fpgaPublish.com" spirit:library="user" spirit:name="SHK_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>wvalid</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_shk_gray_wvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>wready</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_shk_gray_wready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>smiso</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_shk_gray_smiso</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>smosi</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_shk_gray_smosi</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>dmiso</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_shk_gray_dmiso</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>dmosi</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_shk_gray_dmosi</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>m_bram_gray_rst</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m_bram_gray_rst</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>s_sys_a_resetn</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_sys_a_resetn</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_SYS_A_RESETN.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>m_bram_gray_clk</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m_bram_gray_clk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_BRAM_GRAY_CLK.ASSOCIATED_RESET">m_bram_gray_rst</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>s_sys_a_clock</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_sys_a_clock</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_SYS_A_CLOCK.ASSOCIATED_RESET">s_sys_a_resetn</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>m_bram_gray</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="bram" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="bram_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>EN</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m_bram_gray_en</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>DOUT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m_bram_gray_dout</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>DIN</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m_bram_gray_din</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WE</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m_bram_gray_we</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ADDR</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m_bram_gray_addr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m_bram_gray_clk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m_bram_gray_rst</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>Verilog</spirit:language>
+        <spirit:modelName>gray_driv</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>ef354b7a</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>Verilog</spirit:language>
+        <spirit:modelName>gray_driv</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>ef354b7a</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_testbench</spirit:name>
+        <spirit:displayName>Test Bench</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation.testbench</spirit:envIdentifier>
+        <spirit:modelName>tb_light_eye_v2_13</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_testbench_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>5219fa13</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_xpgui</spirit:name>
+        <spirit:displayName>UI Layout</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:xgui.ui</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>116f034c</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_readme</spirit:name>
+        <spirit:displayName>Readme</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:docs.readme</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_readme_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>f840d479</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>s_sys_a_clock</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_sys_a_resetn</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_shk_gray_wvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_shk_gray_smosi</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.WD_SHK_SYNC&apos;)) - 1)">15</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_shk_gray_dmosi</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.WD_SHK_DLAY&apos;)) - 1)">14</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_shk_gray_wready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_shk_gray_smiso</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.WD_SHK_SYNC&apos;)) - 1)">15</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_shk_gray_dmiso</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.WD_SHK_DLAY&apos;)) - 1)">14</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m_bram_gray_addr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.WD_BRAM_DAT&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m_bram_gray_clk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m_bram_gray_din</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.WD_BRAM_DAT&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m_bram_gray_dout</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.WD_BRAM_DAT&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">8</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m_bram_gray_en</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m_bram_gray_rst</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m_bram_gray_we</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.WD_BRAM_WEN&apos;)) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_err_gray_info1</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.WD_ERR_INFO&apos;)) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m_err_gray_info1</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.WD_ERR_INFO&apos;)) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>NB_VER</spirit:name>
+        <spirit:displayName>Nb Ver</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.NB_VER">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>WD_SHK_SYNC</spirit:name>
+        <spirit:displayName>Wd Shk Sync</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.WD_SHK_SYNC">16</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>WD_SHK_DLAY</spirit:name>
+        <spirit:displayName>Wd Shk Dlay</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.WD_SHK_DLAY">15</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>WD_BRAM_DAT</spirit:name>
+        <spirit:displayName>Wd Bram Dat</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.WD_BRAM_DAT">32</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>WD_BRAM_WEN</spirit:name>
+        <spirit:displayName>Wd Bram Wen</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.WD_BRAM_WEN">4</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>WD_ERR_INFO</spirit:name>
+        <spirit:displayName>Wd Err Info</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.WD_ERR_INFO">4</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:choices>
+    <spirit:choice>
+      <spirit:name>choice_list_9d8b0d81</spirit:name>
+      <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
+      <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
+    </spirit:choice>
+  </spirit:choices>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/physic.xdc</spirit:name>
+        <spirit:userFileType>xdc</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/timing.xdc</spirit:name>
+        <spirit:userFileType>xdc</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/mem.coe</spirit:name>
+        <spirit:userFileType>coe</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/gray_driv.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_7dd5be70</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/mem.coe</spirit:name>
+        <spirit:userFileType>coe</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/gray_driv.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_testbench_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/tb_light_eye_v2_13.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_testbench</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>xgui/gray_driv_v1_02.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_116f034c</spirit:userFileType>
+        <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_readme_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/version.md</spirit:name>
+        <spirit:fileType>unknown</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>gray_driv_v1_0</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>NB_VER</spirit:name>
+      <spirit:displayName>Nb Ver</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.NB_VER">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>WD_SHK_SYNC</spirit:name>
+      <spirit:displayName>Wd Shk Sync</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.WD_SHK_SYNC">16</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>WD_SHK_DLAY</spirit:name>
+      <spirit:displayName>Wd Shk Dlay</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.WD_SHK_DLAY">15</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>WD_BRAM_DAT</spirit:name>
+      <spirit:displayName>Wd Bram Dat</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.WD_BRAM_DAT">32</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>WD_BRAM_WEN</spirit:name>
+      <spirit:displayName>Wd Bram Wen</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.WD_BRAM_WEN">4</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>WD_ERR_INFO</spirit:name>
+      <spirit:displayName>Wd Err Info</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.WD_ERR_INFO">4</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">gray_driv_v1_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Production">zynquplus</xilinx:family>
+      </xilinx:supportedFamilies>
+      <xilinx:taxonomies>
+        <xilinx:taxonomy>/UserIP</xilinx:taxonomy>
+      </xilinx:taxonomies>
+      <xilinx:displayName>gray_driv_v1_0</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:vendorDisplayName>fpgaPublish</xilinx:vendorDisplayName>
+      <xilinx:coreRevision>6</xilinx:coreRevision>
+      <xilinx:upgrades>
+        <xilinx:canUpgradeFrom>xilinx.com:user:gray_driv:1.0</xilinx:canUpgradeFrom>
+      </xilinx:upgrades>
+      <xilinx:coreCreationDateTime>2022-08-22T15:35:36Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6de2a41d_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_work3/light_eye_v2_13.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3306ff83_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_work3/light_eye_v2_13.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1c2a66ed_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_work3/light_eye_v2_13.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@48eeaa18_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_work3/light_eye_v2_13.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@33de4bfa_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_work3/light_eye_v2_13.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5b9289aa_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_work3/light_eye_v2_13.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@34b195be_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_work3/light_eye_v2_13.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2929d265_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_work3/light_eye_v2_13.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6ab9f3c5_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_work3/light_eye_v2_13.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6ea615da_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_work3/light_eye_v2_13.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@38b69109_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_work3/light_eye_v2_13.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@11cdd12c_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_work3/light_eye_v2_13.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1afd7762_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_work3/light_eye_v2_13.cores</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6b627809_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@36403641_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4351906c_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@70c791bf_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@23d0cc76_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1dfc2dfb_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5dc16628_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1d7005ea_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@29367a51_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@10e7c560_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@39c98aa5_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5e4bca7d_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@61c7aa92_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@50cf2458_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@20d99580_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5773e678_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7bb54c84_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@668cfbe4_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@da23fbf_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@622eb196_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@60c2f543_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4cd14bc9_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5374e9d2_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7f25b0bd_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@627092da_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7e8889fd_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@45112354_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@71fcd6ee_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3f4c43ae_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@ef59c3f_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7babed53_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@456f80c3_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@203c7b6b_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@27ad2c27_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3f533afd_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3c5beb0c_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2fbc34f9_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3e85a03a_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2ee8d87f_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@20e1f66c_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@19dbeb2a_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@26fbfaae_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2b686a9a_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1f7dc59f_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@11eaf439_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2f05c707_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6e439883_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2f2cfd00_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4ace3796_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1163b177_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2ffaeb4d_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@740d28f1_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@20a9dcb2_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@69701e1e_ARCHIVE_LOCATION">d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2021.1</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="4ee50e59"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="522db5ad"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="c009ea44"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="31848ce1"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="a882b672"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

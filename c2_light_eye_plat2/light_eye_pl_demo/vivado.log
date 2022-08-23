@@ -1,0 +1,98 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Aug  2 21:25:45 2022
+# Process ID: 10568
+# Current directory: D:/e1_library/f2_light_eye_plat2/light_eye_pl_demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3736 D:\e1_library\f2_light_eye_plat2\light_eye_pl_demo\light_eye_v2_0.xpr
+# Log file: D:/e1_library/f2_light_eye_plat2/light_eye_pl_demo/vivado.log
+# Journal file: D:/e1_library/f2_light_eye_plat2/light_eye_pl_demo\vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-1460] Use of init.tcl in C:/Users/FJB/AppData/Roaming/Xilinx/Vivado/init.tcl is deprecated. Please use Vivado_init.tcl 
+Sourcing tcl script 'C:/Users/FJB/AppData/Roaming/Xilinx/Vivado/init.tcl'
+start_gui
+open_project D:/e1_library/f2_light_eye_plat2/light_eye_pl_demo/light_eye_v2_0.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/e1_library/f2_light_eye_plat2/light_eye_pl_demo/light_eye_v2_0.cores/bus_shake'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/e1_library/f2_light_eye_plat2/light_eye_pl_work/light_eye_v2_1.cores'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/software_fpga/xilinx_software/Vivado/2021.1/data/ip'.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'fpgaPublish.com:user:SHK:1.0'. The one found in location 'd:/e1_library/f2_light_eye_plat2/light_eye_pl_demo/light_eye_v2_0.cores/bus_shake/SHK.xml' will take precedence over the same Interface in location 'd:/e1_library/f2_light_eye_plat2/light_eye_pl_work/light_eye_v2_1.cores/bus_shake/SHK.xml'
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 1257.703 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {D:/e1_library/f2_light_eye_plat2/light_eye_pl_demo/light_eye_v2_0.srcs/sources_1/bd/light_eye_v2_0/light_eye_v2_0.bd}
+Reading block design file <D:/e1_library/f2_light_eye_plat2/light_eye_pl_demo/light_eye_v2_0.srcs/sources_1/bd/light_eye_v2_0/light_eye_v2_0.bd>...
+Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.3 - zynq_ultra_ps_e_0
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_0
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps8_0_96M
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- xilinx.com:user:gpio_shk:1.0 - gpio_shk_0
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_1
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_2
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_3
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_4
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_5
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_6
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_7
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_1
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_2
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_3
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_4
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_5
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_6
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_7
+Successfully read diagram <light_eye_v2_0> from block design file <D:/e1_library/f2_light_eye_plat2/light_eye_pl_demo/light_eye_v2_0.srcs/sources_1/bd/light_eye_v2_0/light_eye_v2_0.bd>
+open_bd_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1257.703 ; gain = 0.000
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 blk_mem_gen_8
+endgroup
+startgroup
+copy_bd_objs /  [get_bd_cells {blk_mem_gen_8}]
+set_property location {5 1583 1321} [get_bd_cells blk_mem_gen_9]
+endgroup
+set_property location {5 1638 1215} [get_bd_cells blk_mem_gen_8]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.1 axi_bram_ctrl_8
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.1-2] light_eye_v2_0_axi_bram_ctrl_8_0: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.1-1] light_eye_v2_0_axi_bram_ctrl_8_0: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+endgroup
+set_property location {4 1280 1321} [get_bd_cells axi_bram_ctrl_8]
+startgroup
+copy_bd_objs /  [get_bd_cells {axi_bram_ctrl_8}]
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.1-2] light_eye_v2_0_axi_bram_ctrl_8_1: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.1-1] light_eye_v2_0_axi_bram_ctrl_8_1: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+set_property location {3 1251 1446} [get_bd_cells axi_bram_ctrl_9]
+endgroup
+set_property location {4 1633 1448} [get_bd_cells blk_mem_gen_9]
+set_property location {4 1633 1307} [get_bd_cells blk_mem_gen_8]
+connect_bd_intf_net [get_bd_intf_pins axi_bram_ctrl_8/BRAM_PORTA] [get_bd_intf_pins blk_mem_gen_8/BRAM_PORTA]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Memory_Type {True_Dual_Port_RAM} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Use_RSTB_Pin {true} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Write_Rate {50} CONFIG.Port_B_Enable_Rate {100}] [get_bd_cells blk_mem_gen_8]
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Memory_Type {True_Dual_Port_RAM} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Use_RSTB_Pin {true} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Write_Rate {50} CONFIG.Port_B_Enable_Rate {100}] [get_bd_cells blk_mem_gen_9]
+connect_bd_intf_net [get_bd_intf_pins axi_bram_ctrl_9/BRAM_PORTA] [get_bd_intf_pins blk_mem_gen_9/BRAM_PORTA]
+startgroup
+set_property -dict [list CONFIG.SINGLE_PORT_BRAM {1}] [get_bd_cells axi_bram_ctrl_8]
+endgroup
+startgroup
+set_property -dict [list CONFIG.SINGLE_PORT_BRAM {1}] [get_bd_cells axi_bram_ctrl_9]
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins blk_mem_gen_8/BRAM_PORTB]
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins blk_mem_gen_9/BRAM_PORTB]
+endgroup
+save_bd_design
+Wrote  : <D:\e1_library\f2_light_eye_plat2\light_eye_pl_demo\light_eye_v2_0.srcs\sources_1\bd\light_eye_v2_0\light_eye_v2_0.bd> 
+Wrote  : <D:/e1_library/f2_light_eye_plat2/light_eye_pl_demo/light_eye_v2_0.srcs/sources_1/bd/light_eye_v2_0/ui/bd_761b2d44.ui> 
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Aug  2 22:47:43 2022...

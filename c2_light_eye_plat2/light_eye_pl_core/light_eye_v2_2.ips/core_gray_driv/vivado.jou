@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Mon Aug 22 23:34:03 2022
+# Process ID: 12092
+# Current directory: D:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11524 D:\e1_library\f2_light_eye_plat2\light_eye_pl_core\light_eye_v2_2.ips\core_gray_driv\light_eye_v2_13_core.xpr
+# Log file: D:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv/vivado.log
+# Journal file: D:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv/light_eye_v2_13_core.xpr
+update_compile_order -fileset sources_1
+ipx::open_ipxact_file {D:\e1_library\f2_light_eye_plat2\light_eye_pl_core\light_eye_v2_2.ips\core_gray_driv\component.xml}
+set_property version 1.02 [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 6 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv

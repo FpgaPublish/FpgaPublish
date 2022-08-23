@@ -1,0 +1,7 @@
+2022-08-22T22:52:41.593640300255-22:52:41 **** Clean-only build of configuration Debug for project light_eye_v2_32 ****
+000-make clean 
+000-rm -rf  ./src/axi_blck/axi_bram_chck.o ./src/axi_blck/axi_bram_ctrl.o ./src/axi_blck/axi_gpio_chck.o ./src/axi_blck/axi_gpio_ctrl.o  ./src/i2c_access.o ./src/iic_phyreset.o ./src/light_eye_main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/udp_perf_server.o  ./src/axi_blck/axi_bram_chck.d ./src/axi_blck/axi_bram_ctrl.d ./src/axi_blck/axi_gpio_chck.d ./src/axi_blck/axi_gpio_ctrl.d  ./src/i2c_access.d ./src/iic_phyreset.d ./src/light_eye_main.d ./src/platform.d ./src/platform_mb.d ./src/platform_zynq.d ./src/platform_zynqmp.d ./src/sfp.d ./src/si5324.d ./src/udp_perf_server.d  light_eye_v2_32.elf.size  light_eye_v2_32.elf
+000-' '
+00255-
+22:52:41 Build Finished (took 195ms)
+

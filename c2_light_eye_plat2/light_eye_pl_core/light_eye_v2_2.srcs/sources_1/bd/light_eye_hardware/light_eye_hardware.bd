@@ -1,0 +1,530 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x7451BFEB2AA54170",
+      "device": "xczu2cg-sfvc784-2-e",
+      "gen_directory": "../../../../light_eye_v2_2.gen/sources_1/bd/light_eye_hardware",
+      "name": "light_eye_hardware",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "clk_wiz_0": "",
+      "xlconstant_0": "",
+      "shk_chose_0": "",
+      "gray_driv_0": "",
+      "gray_driv_1": "",
+      "gray_driv_2": "",
+      "gray_driv_3": "",
+      "gray_driv_4": "",
+      "gray_driv_5": "",
+      "gray_driv_6": "",
+      "gray_driv_7": ""
+    },
+    "interface_ports": {
+      "s_shk_0_0": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "fpgaPublish.com:user:SHK:1.0",
+        "vlnv": "fpgaPublish.com:user:SHK_rtl:1.0"
+      },
+      "m_bram_gray_0": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:bram:1.0",
+        "vlnv": "xilinx.com:interface:bram_rtl:1.0",
+        "parameters": {
+          "MASTER_TYPE": {
+            "value": "OTHER",
+            "value_src": "default"
+          },
+          "MEM_ECC": {
+            "value": "NONE",
+            "value_src": "default"
+          },
+          "MEM_SIZE": {
+            "value": "8192",
+            "value_src": "default"
+          },
+          "MEM_WIDTH": {
+            "value": "32",
+            "value_src": "default"
+          },
+          "READ_LATENCY": {
+            "value": "1",
+            "value_src": "default"
+          }
+        }
+      },
+      "m_bram_gray_1": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:bram:1.0",
+        "vlnv": "xilinx.com:interface:bram_rtl:1.0",
+        "parameters": {
+          "MASTER_TYPE": {
+            "value": "OTHER",
+            "value_src": "default"
+          },
+          "MEM_ECC": {
+            "value": "NONE",
+            "value_src": "default"
+          },
+          "MEM_SIZE": {
+            "value": "8192",
+            "value_src": "default"
+          },
+          "MEM_WIDTH": {
+            "value": "32",
+            "value_src": "default"
+          },
+          "READ_LATENCY": {
+            "value": "1",
+            "value_src": "default"
+          }
+        }
+      },
+      "m_bram_gray_2": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:bram:1.0",
+        "vlnv": "xilinx.com:interface:bram_rtl:1.0",
+        "parameters": {
+          "MASTER_TYPE": {
+            "value": "OTHER",
+            "value_src": "default"
+          },
+          "MEM_ECC": {
+            "value": "NONE",
+            "value_src": "default"
+          },
+          "MEM_SIZE": {
+            "value": "8192",
+            "value_src": "default"
+          },
+          "MEM_WIDTH": {
+            "value": "32",
+            "value_src": "default"
+          },
+          "READ_LATENCY": {
+            "value": "1",
+            "value_src": "default"
+          }
+        }
+      },
+      "m_bram_gray_3": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:bram:1.0",
+        "vlnv": "xilinx.com:interface:bram_rtl:1.0",
+        "parameters": {
+          "MASTER_TYPE": {
+            "value": "OTHER",
+            "value_src": "default"
+          },
+          "MEM_ECC": {
+            "value": "NONE",
+            "value_src": "default"
+          },
+          "MEM_SIZE": {
+            "value": "8192",
+            "value_src": "default"
+          },
+          "MEM_WIDTH": {
+            "value": "32",
+            "value_src": "default"
+          },
+          "READ_LATENCY": {
+            "value": "1",
+            "value_src": "default"
+          }
+        }
+      },
+      "m_bram_gray_4": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:bram:1.0",
+        "vlnv": "xilinx.com:interface:bram_rtl:1.0",
+        "parameters": {
+          "MASTER_TYPE": {
+            "value": "OTHER",
+            "value_src": "default"
+          },
+          "MEM_ECC": {
+            "value": "NONE",
+            "value_src": "default"
+          },
+          "MEM_SIZE": {
+            "value": "8192",
+            "value_src": "default"
+          },
+          "MEM_WIDTH": {
+            "value": "32",
+            "value_src": "default"
+          },
+          "READ_LATENCY": {
+            "value": "1",
+            "value_src": "default"
+          }
+        }
+      },
+      "m_bram_gray_5": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:bram:1.0",
+        "vlnv": "xilinx.com:interface:bram_rtl:1.0",
+        "parameters": {
+          "MASTER_TYPE": {
+            "value": "OTHER",
+            "value_src": "default"
+          },
+          "MEM_ECC": {
+            "value": "NONE",
+            "value_src": "default"
+          },
+          "MEM_SIZE": {
+            "value": "8192",
+            "value_src": "default"
+          },
+          "MEM_WIDTH": {
+            "value": "32",
+            "value_src": "default"
+          },
+          "READ_LATENCY": {
+            "value": "1",
+            "value_src": "default"
+          }
+        }
+      },
+      "m_bram_gray_6": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:bram:1.0",
+        "vlnv": "xilinx.com:interface:bram_rtl:1.0",
+        "parameters": {
+          "MASTER_TYPE": {
+            "value": "OTHER",
+            "value_src": "default"
+          },
+          "MEM_ECC": {
+            "value": "NONE",
+            "value_src": "default"
+          },
+          "MEM_SIZE": {
+            "value": "8192",
+            "value_src": "default"
+          },
+          "MEM_WIDTH": {
+            "value": "32",
+            "value_src": "default"
+          },
+          "READ_LATENCY": {
+            "value": "1",
+            "value_src": "default"
+          }
+        }
+      },
+      "m_bram_gray_7": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:bram:1.0",
+        "vlnv": "xilinx.com:interface:bram_rtl:1.0",
+        "parameters": {
+          "MASTER_TYPE": {
+            "value": "OTHER",
+            "value_src": "default"
+          },
+          "MEM_ECC": {
+            "value": "NONE",
+            "value_src": "default"
+          },
+          "MEM_SIZE": {
+            "value": "8192",
+            "value_src": "default"
+          },
+          "MEM_WIDTH": {
+            "value": "32",
+            "value_src": "default"
+          },
+          "READ_LATENCY": {
+            "value": "1",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "ports": {
+      "clk_in1_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "light_eye_hardware_clk_in1_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "25000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "light_eye_hardware_clk_wiz_0_0",
+        "xci_path": "ip\\light_eye_hardware_clk_wiz_0_0\\light_eye_hardware_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "parameters": {
+          "CLKIN1_JITTER_PS": {
+            "value": "400.0"
+          },
+          "CLKOUT1_JITTER": {
+            "value": "190.517"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "222.305"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "48.000"
+          },
+          "MMCM_CLKIN1_PERIOD": {
+            "value": "40.000"
+          },
+          "MMCM_CLKIN2_PERIOD": {
+            "value": "10.0"
+          },
+          "PRIM_IN_FREQ": {
+            "value": "25.000"
+          },
+          "PRIM_SOURCE": {
+            "value": "Global_buffer"
+          },
+          "USE_RESET": {
+            "value": "false"
+          }
+        }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "light_eye_hardware_xlconstant_0_0",
+        "xci_path": "ip\\light_eye_hardware_xlconstant_0_0\\light_eye_hardware_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0",
+        "parameters": {
+          "CONST_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "shk_chose_0": {
+        "vlnv": "fpgaPublish:user:shk_chose:1.0",
+        "xci_name": "light_eye_hardware_shk_chose_0_0",
+        "xci_path": "ip\\light_eye_hardware_shk_chose_0_0\\light_eye_hardware_shk_chose_0_0.xci",
+        "inst_hier_path": "shk_chose_0"
+      },
+      "gray_driv_0": {
+        "vlnv": "fpgaPublish:user:gray_driv:1.02",
+        "xci_name": "light_eye_hardware_gray_driv_0_0",
+        "xci_path": "ip\\light_eye_hardware_gray_driv_0_0\\light_eye_hardware_gray_driv_0_0.xci",
+        "inst_hier_path": "gray_driv_0"
+      },
+      "gray_driv_1": {
+        "vlnv": "fpgaPublish:user:gray_driv:1.02",
+        "xci_name": "light_eye_hardware_gray_driv_0_1",
+        "xci_path": "ip\\light_eye_hardware_gray_driv_0_1\\light_eye_hardware_gray_driv_0_1.xci",
+        "inst_hier_path": "gray_driv_1"
+      },
+      "gray_driv_2": {
+        "vlnv": "fpgaPublish:user:gray_driv:1.02",
+        "xci_name": "light_eye_hardware_gray_driv_1_0",
+        "xci_path": "ip\\light_eye_hardware_gray_driv_1_0\\light_eye_hardware_gray_driv_1_0.xci",
+        "inst_hier_path": "gray_driv_2"
+      },
+      "gray_driv_3": {
+        "vlnv": "fpgaPublish:user:gray_driv:1.02",
+        "xci_name": "light_eye_hardware_gray_driv_2_0",
+        "xci_path": "ip\\light_eye_hardware_gray_driv_2_0\\light_eye_hardware_gray_driv_2_0.xci",
+        "inst_hier_path": "gray_driv_3"
+      },
+      "gray_driv_4": {
+        "vlnv": "fpgaPublish:user:gray_driv:1.02",
+        "xci_name": "light_eye_hardware_gray_driv_3_0",
+        "xci_path": "ip\\light_eye_hardware_gray_driv_3_0\\light_eye_hardware_gray_driv_3_0.xci",
+        "inst_hier_path": "gray_driv_4"
+      },
+      "gray_driv_5": {
+        "vlnv": "fpgaPublish:user:gray_driv:1.02",
+        "xci_name": "light_eye_hardware_gray_driv_4_0",
+        "xci_path": "ip\\light_eye_hardware_gray_driv_4_0\\light_eye_hardware_gray_driv_4_0.xci",
+        "inst_hier_path": "gray_driv_5"
+      },
+      "gray_driv_6": {
+        "vlnv": "fpgaPublish:user:gray_driv:1.02",
+        "xci_name": "light_eye_hardware_gray_driv_5_0",
+        "xci_path": "ip\\light_eye_hardware_gray_driv_5_0\\light_eye_hardware_gray_driv_5_0.xci",
+        "inst_hier_path": "gray_driv_6"
+      },
+      "gray_driv_7": {
+        "vlnv": "fpgaPublish:user:gray_driv:1.02",
+        "xci_name": "light_eye_hardware_gray_driv_6_0",
+        "xci_path": "ip\\light_eye_hardware_gray_driv_6_0\\light_eye_hardware_gray_driv_6_0.xci",
+        "inst_hier_path": "gray_driv_7"
+      }
+    },
+    "interface_nets": {
+      "gray_driv_0_m_bram_gray": {
+        "interface_ports": [
+          "m_bram_gray_0",
+          "gray_driv_0/m_bram_gray"
+        ]
+      },
+      "gray_driv_1_m_bram_gray": {
+        "interface_ports": [
+          "m_bram_gray_1",
+          "gray_driv_1/m_bram_gray"
+        ]
+      },
+      "gray_driv_2_m_bram_gray": {
+        "interface_ports": [
+          "m_bram_gray_2",
+          "gray_driv_2/m_bram_gray"
+        ]
+      },
+      "gray_driv_3_m_bram_gray": {
+        "interface_ports": [
+          "m_bram_gray_3",
+          "gray_driv_3/m_bram_gray"
+        ]
+      },
+      "gray_driv_4_m_bram_gray": {
+        "interface_ports": [
+          "m_bram_gray_4",
+          "gray_driv_4/m_bram_gray"
+        ]
+      },
+      "gray_driv_5_m_bram_gray": {
+        "interface_ports": [
+          "m_bram_gray_5",
+          "gray_driv_5/m_bram_gray"
+        ]
+      },
+      "gray_driv_6_m_bram_gray": {
+        "interface_ports": [
+          "m_bram_gray_6",
+          "gray_driv_6/m_bram_gray"
+        ]
+      },
+      "gray_driv_7_m_bram_gray": {
+        "interface_ports": [
+          "m_bram_gray_7",
+          "gray_driv_7/m_bram_gray"
+        ]
+      },
+      "s_shk_0_0_1": {
+        "interface_ports": [
+          "s_shk_0_0",
+          "shk_chose_0/s_shk_0"
+        ]
+      },
+      "shk_chose_0_m_shk_0": {
+        "interface_ports": [
+          "shk_chose_0/m_shk_0",
+          "gray_driv_0/s_shk_gray"
+        ]
+      },
+      "shk_chose_0_m_shk_1": {
+        "interface_ports": [
+          "shk_chose_0/m_shk_1",
+          "gray_driv_1/s_shk_gray"
+        ]
+      },
+      "shk_chose_0_m_shk_2": {
+        "interface_ports": [
+          "shk_chose_0/m_shk_2",
+          "gray_driv_2/s_shk_gray"
+        ]
+      },
+      "shk_chose_0_m_shk_3": {
+        "interface_ports": [
+          "shk_chose_0/m_shk_3",
+          "gray_driv_3/s_shk_gray"
+        ]
+      },
+      "shk_chose_0_m_shk_4": {
+        "interface_ports": [
+          "shk_chose_0/m_shk_4",
+          "gray_driv_4/s_shk_gray"
+        ]
+      },
+      "shk_chose_0_m_shk_5": {
+        "interface_ports": [
+          "shk_chose_0/m_shk_5",
+          "gray_driv_5/s_shk_gray"
+        ]
+      },
+      "shk_chose_0_m_shk_6": {
+        "interface_ports": [
+          "shk_chose_0/m_shk_6",
+          "gray_driv_6/s_shk_gray"
+        ]
+      },
+      "shk_chose_0_m_shk_7": {
+        "interface_ports": [
+          "shk_chose_0/m_shk_7",
+          "gray_driv_7/s_shk_gray"
+        ]
+      }
+    },
+    "nets": {
+      "clk_in1_0_1": {
+        "ports": [
+          "clk_in1_0",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "gray_driv_0/s_sys_a_clock",
+          "gray_driv_1/s_sys_a_clock",
+          "gray_driv_2/s_sys_a_clock",
+          "gray_driv_3/s_sys_a_clock",
+          "gray_driv_4/s_sys_a_clock",
+          "gray_driv_5/s_sys_a_clock",
+          "gray_driv_6/s_sys_a_clock",
+          "gray_driv_7/s_sys_a_clock"
+        ]
+      },
+      "clk_wiz_0_locked": {
+        "ports": [
+          "clk_wiz_0/locked",
+          "gray_driv_0/s_sys_a_resetn",
+          "gray_driv_1/s_sys_a_resetn",
+          "gray_driv_2/s_sys_a_resetn",
+          "gray_driv_3/s_sys_a_resetn",
+          "gray_driv_4/s_sys_a_resetn",
+          "gray_driv_5/s_sys_a_resetn",
+          "gray_driv_6/s_sys_a_resetn",
+          "gray_driv_7/s_sys_a_resetn"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "gray_driv_0/s_err_gray_info1",
+          "gray_driv_1/s_err_gray_info1",
+          "gray_driv_2/s_err_gray_info1",
+          "gray_driv_3/s_err_gray_info1",
+          "gray_driv_4/s_err_gray_info1",
+          "gray_driv_5/s_err_gray_info1",
+          "gray_driv_6/s_err_gray_info1",
+          "gray_driv_7/s_err_gray_info1"
+        ]
+      }
+    }
+  }
+}

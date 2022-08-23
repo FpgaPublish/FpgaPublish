@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog   \
+"../../../../src/gray_driv.v" \
+
+sv   \
+"../../../../src/tb_light_eye_v2_13.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

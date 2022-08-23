@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Aug 13 11:07:21 2022
+# Process ID: 6524
+# Current directory: D:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv/light_eye_v2_13_core.runs/synth_1
+# Command line: vivado.exe -log gray_driv.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source gray_driv.tcl
+# Log file: D:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv/light_eye_v2_13_core.runs/synth_1/gray_driv.vds
+# Journal file: D:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv/light_eye_v2_13_core.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source gray_driv.tcl -notrace

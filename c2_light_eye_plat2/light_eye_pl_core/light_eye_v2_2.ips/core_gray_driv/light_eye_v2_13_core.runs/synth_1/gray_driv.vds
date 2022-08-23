@@ -1,0 +1,257 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Aug 13 11:07:21 2022
+# Process ID: 6524
+# Current directory: D:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv/light_eye_v2_13_core.runs/synth_1
+# Command line: vivado.exe -log gray_driv.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source gray_driv.tcl
+# Log file: D:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv/light_eye_v2_13_core.runs/synth_1/gray_driv.vds
+# Journal file: D:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv/light_eye_v2_13_core.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-1460] Use of init.tcl in C:/Users/FJB/AppData/Roaming/Xilinx/Vivado/init.tcl is deprecated. Please use Vivado_init.tcl 
+Sourcing tcl script 'C:/Users/FJB/AppData/Roaming/Xilinx/Vivado/init.tcl'
+source gray_driv.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv/bus_shake'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/software_fpga/xilinx_software/Vivado/2021.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is d:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv/light_eye_v2_13_core.cache/ip 
+Command: synth_design -top gray_driv -part xczu2cg-sfvc784-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu2cg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu2cg'
+INFO: [Device 21-403] Loading part xczu2cg-sfvc784-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13692
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1564.262 ; gain = 121.855
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'gray_driv' [D:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv/src/gray_driv.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'gray_driv' (1#1) [D:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv/src/gray_driv.v:24]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1612.773 ; gain = 170.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1630.703 ; gain = 188.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1630.703 ; gain = 188.297
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1630.703 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv/src/physic.xdc]
+Finished Parsing XDC File [D:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv/src/physic.xdc]
+Parsing XDC File [D:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv/src/timing.xdc]
+Finished Parsing XDC File [D:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv/src/timing.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1754.113 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1754.113 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1754.113 ; gain = 311.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu2cg-sfvc784-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1754.113 ; gain = 311.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1754.113 ; gain = 311.707
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'cstate_reg' in module 'gray_driv'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                          0000001 |                             0000
+                   START |                          1000000 |                             0001
+                    SIZE |                          0100000 |                             0010
+                    READ |                          0001000 |                             0011
+                    GRAY |                          0010000 |                             0100
+                   WRITE |                          0000010 |                             0101
+                  iSTATE |                          0000100 |                             0110
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cstate_reg' using encoding 'one-hot' in module 'gray_driv'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1754.113 ; gain = 311.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   23 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	               15 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input   10 Bit        Muxes := 2     
+	   7 Input    7 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 11    
+	   7 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:72)
+BRAMs: 300 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1754.113 ; gain = 311.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2260.902 ; gain = 818.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2261.199 ; gain = 818.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2280.262 ; gain = 837.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2287.195 ; gain = 844.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2287.195 ; gain = 844.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2287.195 ; gain = 844.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2287.195 ; gain = 844.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2287.195 ; gain = 844.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2287.195 ; gain = 844.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY8 |    10|
+|3     |LUT1   |     7|
+|4     |LUT2   |    18|
+|5     |LUT3   |    11|
+|6     |LUT4   |    13|
+|7     |LUT5   |    14|
+|8     |LUT6   |    17|
+|9     |FDRE   |   135|
+|10    |FDSE   |     2|
+|11    |IBUF   |    47|
+|12    |OBUF   |   107|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2287.195 ; gain = 844.789
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 2287.195 ; gain = 721.379
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2287.195 ; gain = 844.789
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2299.262 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 58 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2325.891 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 48 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUF => IBUF (IBUFCTRL, INBUF): 47 instances
+
+Synth Design complete, checksum: 4aae55de
+INFO: [Common 17-83] Releasing license: Synthesis
+21 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2325.891 ; gain = 1068.410
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Common 17-1381] The checkpoint 'D:/e1_library/f2_light_eye_plat2/light_eye_pl_core/light_eye_v2_2.ips/core_gray_driv/light_eye_v2_13_core.runs/synth_1/gray_driv.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file gray_driv_utilization_synth.rpt -pb gray_driv_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Aug 13 11:07:59 2022...

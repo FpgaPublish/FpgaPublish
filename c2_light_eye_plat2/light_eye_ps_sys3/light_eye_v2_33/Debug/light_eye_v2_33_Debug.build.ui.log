@@ -1,0 +1,21 @@
+2022-08-23T22:41:58.775481100255-22:41:58 **** Incremental Build of configuration Debug for project light_eye_v2_33 ****
+000-make all 
+000-'Building file: ../src/udp_perf_server.c'
+000-'Invoking: ARM v8 gcc compiler'
+000-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/udp_perf_server.o" -ID:/e1_library/f2_light_eye_plat2/light_eye_ps_sys3/light_eye_top_top0_0822_2226/export/light_eye_top_top0_0822_2226/sw/light_eye_top_top0_0822_2226/standalone_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/udp_perf_server.d" -MT"src/udp_perf_server.o" -o "src/udp_perf_server.o" "../src/udp_perf_server.c"
+000-'Finished building: ../src/udp_perf_server.c'
+000-' '
+000-'Building target: light_eye_v2_33.elf'
+000-'Invoking: ARM v8 gcc linker'
+000-aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/e1_library/f2_light_eye_plat2/light_eye_ps_sys3/light_eye_top_top0_0822_2226/export/light_eye_top_top0_0822_2226/sw/light_eye_top_top0_0822_2226/standalone_psu_cortexa53_0/bsplib/lib -o "light_eye_v2_33.elf"  ./src/axi_blck/axi_bram_chck.o ./src/axi_blck/axi_bram_ctrl.o ./src/axi_blck/axi_gpio_chck.o ./src/axi_blck/axi_gpio_ctrl.o  ./src/i2c_access.o ./src/iic_phyreset.o ./src/light_eye_main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/udp_perf_server.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+000-'Finished building target: light_eye_v2_33.elf'
+000-' '
+000-'Invoking: ARM v8 Print Size'
+000-aarch64-none-elf-size light_eye_v2_33.elf  |tee "light_eye_v2_33.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000- 131779	   7504	35819909	35959192	224b198	light_eye_v2_33.elf
+000-'Finished building: light_eye_v2_33.elf.size'
+000-' '
+00255-
+22:41:59 Build Finished (took 759ms)
+

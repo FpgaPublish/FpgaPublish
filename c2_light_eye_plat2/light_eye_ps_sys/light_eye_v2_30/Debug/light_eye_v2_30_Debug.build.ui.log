@@ -1,0 +1,21 @@
+2022-07-30T17:48:12.535606700255-17:48:12 **** Incremental Build of configuration Debug for project light_eye_v2_30 ****
+000-make all 
+000-'Building file: ../src/udp_perf_server.c'
+000-'Invoking: ARM v8 gcc compiler'
+000-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/udp_perf_server.o" -ID:/e1_library/f2_light_eye_plat2/light_eye_ps_sys/key_led_v2_22_wrapper_top0/export/key_led_v2_22_wrapper_top0/sw/key_led_v2_22_wrapper_top0/standalone_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/udp_perf_server.d" -MT"src/udp_perf_server.o" -o "src/udp_perf_server.o" "../src/udp_perf_server.c"
+000-'Finished building: ../src/udp_perf_server.c'
+000-' '
+000-'Building target: light_eye_v2_30.elf'
+000-'Invoking: ARM v8 gcc linker'
+000-aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/e1_library/f2_light_eye_plat2/light_eye_ps_sys/key_led_v2_22_wrapper_top0/export/key_led_v2_22_wrapper_top0/sw/key_led_v2_22_wrapper_top0/standalone_psu_cortexa53_0/bsplib/lib -o "light_eye_v2_30.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/light_eye_main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/udp_perf_server.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+000-'Finished building target: light_eye_v2_30.elf'
+000-' '
+000-'Invoking: ARM v8 Print Size'
+000-aarch64-none-elf-size light_eye_v2_30.elf  |tee "light_eye_v2_30.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000- 129275	   7504	35819853	35956632	224a798	light_eye_v2_30.elf
+000-'Finished building: light_eye_v2_30.elf.size'
+000-' '
+00255-
+17:48:14 Build Finished (took 1s.864ms)
+

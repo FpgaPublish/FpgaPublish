@@ -1,0 +1,69 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Jul 31 19:15:16 2022
+# Process ID: 2168
+# Current directory: D:/e1_library/f2_light_eye_plat2/light_eye_pl_work/light_eye_v2_1.cores
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11080 D:\e1_library\f2_light_eye_plat2\light_eye_pl_work\light_eye_v2_1.cores\light_eye_v2_1_core.xpr
+# Log file: D:/e1_library/f2_light_eye_plat2/light_eye_pl_work/light_eye_v2_1.cores/vivado.log
+# Journal file: D:/e1_library/f2_light_eye_plat2/light_eye_pl_work/light_eye_v2_1.cores\vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-1460] Use of init.tcl in C:/Users/FJB/AppData/Roaming/Xilinx/Vivado/init.tcl is deprecated. Please use Vivado_init.tcl 
+Sourcing tcl script 'C:/Users/FJB/AppData/Roaming/Xilinx/Vivado/init.tcl'
+start_gui
+open_project D:/e1_library/f2_light_eye_plat2/light_eye_pl_work/light_eye_v2_1.cores/light_eye_v2_1_core.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/e1_library/f2_light_eye_plat2/light_eye_pl_work/light_eye_v2_1.cores/light_eye_v2_1_core.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/e1_library/f2_light_eye_plat2/light_eye_pl_work/light_eye_v2_1.cores'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/software_fpga/xilinx_software/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 1257.527 ; gain = 0.000
+update_compile_order -fileset sources_1
+ipx::open_ipxact_file {D:\e1_library\f2_light_eye_plat2\light_eye_pl_work\light_eye_v2_1.cores\component.xml}
+WARNING: [IP_Flow 19-5226] Project source file 'd:/e1_library/f2_light_eye_plat2/light_eye_pl_work/light_eye_v2_1.cores/component.xml' ignored by IP packager.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_anylanguagesynthesis (Synthesis)': File 'd:/e1_library/f2_light_eye_plat2/light_eye_pl_work/light_eye_v2_1.cores/src/physic.xdc' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_anylanguagesynthesis (Synthesis)': File 'd:/e1_library/f2_light_eye_plat2/light_eye_pl_work/light_eye_v2_1.cores/src/timing.xdc' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_anylanguagesynthesis (Synthesis)': File 'd:/e1_library/f2_light_eye_plat2/light_eye_pl_work/light_eye_v2_1.cores/src/gpio_shk.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_anylanguagebehavioralsimulation (Simulation)': File 'd:/e1_library/f2_light_eye_plat2/light_eye_pl_work/light_eye_v2_1.cores/src/gpio_shk.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+ipx::remove_bus_interface s_gpio_shk [ipx::current_core]
+ipx::infer_bus_interface s_gpio_shk_tri_o xilinx.com:interface:gpio_rtl:1.0 [ipx::current_core]
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_gpio_shk' of definition 'xilinx.com:interface:gpio:1.0' (from TCL Argument).
+ipx::remove_port_map TRI_O [ipx::get_bus_interfaces s_gpio_shk -of_objects [ipx::current_core]]
+set_property interface_mode mirroredMaster [ipx::get_bus_interfaces s_gpio_shk -of_objects [ipx::current_core]]
+ipx::add_port_map TRI_O [ipx::get_bus_interfaces s_gpio_shk -of_objects [ipx::current_core]]
+set_property physical_name s_gpio_shk_tri_o [ipx::get_port_maps TRI_O -of_objects [ipx::get_bus_interfaces s_gpio_shk -of_objects [ipx::current_core]]]
+ipx::infer_bus_interface s_gpio_shk_tri_i xilinx.com:interface:gpio_rtl:1.0 [ipx::current_core]
+CRITICAL WARNING: [IP_Flow 19-3831] Bus Interface 's_gpio_shk': Bus definition 'xilinx.com:interface:gpio:1.0' does not support 'slave' mode for this interface.
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_gpio_shk' of definition 'xilinx.com:interface:gpio:1.0' (from TCL Argument).
+ipx::remove_port_map TRI_I [ipx::get_bus_interfaces s_gpio_shk -of_objects [ipx::current_core]]
+ipx::add_port_map TRI_O [ipx::get_bus_interfaces s_gpio_shk -of_objects [ipx::current_core]]
+set_property physical_name s_gpio_shk_tri_o [ipx::get_port_maps TRI_O -of_objects [ipx::get_bus_interfaces s_gpio_shk -of_objects [ipx::current_core]]]
+ipx::infer_bus_interface s_gpio_shk_tri_i xilinx.com:interface:gpio_rtl:1.0 [ipx::current_core]
+CRITICAL WARNING: [IP_Flow 19-3831] Bus Interface 's_gpio_shk': Bus definition 'xilinx.com:interface:gpio:1.0' does not support 'slave' mode for this interface.
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_gpio_shk' of definition 'xilinx.com:interface:gpio:1.0' (from TCL Argument).
+ipx::remove_port_map TRI_I [ipx::get_bus_interfaces s_gpio_shk -of_objects [ipx::current_core]]
+set_property name s_gpio_shk_o [ipx::get_bus_interfaces s_gpio_shk -of_objects [ipx::current_core]]
+ipx::add_port_map TRI_O [ipx::get_bus_interfaces s_gpio_shk_o -of_objects [ipx::current_core]]
+set_property physical_name s_gpio_shk_tri_o [ipx::get_port_maps TRI_O -of_objects [ipx::get_bus_interfaces s_gpio_shk_o -of_objects [ipx::current_core]]]
+ipx::add_bus_interface s_gpio_shk_i [ipx::current_core]
+set_property abstraction_type_vlnv xilinx.com:interface:gpio_rtl:1.0 [ipx::get_bus_interfaces s_gpio_shk_i -of_objects [ipx::current_core]]
+set_property bus_type_vlnv xilinx.com:interface:gpio:1.0 [ipx::get_bus_interfaces s_gpio_shk_i -of_objects [ipx::current_core]]
+set_property interface_mode mirroredMaster [ipx::get_bus_interfaces s_gpio_shk_i -of_objects [ipx::current_core]]
+ipx::add_port_map TRI_I [ipx::get_bus_interfaces s_gpio_shk_i -of_objects [ipx::current_core]]
+set_property physical_name s_gpio_shk_tri_i [ipx::get_port_maps TRI_I -of_objects [ipx::get_bus_interfaces s_gpio_shk_i -of_objects [ipx::current_core]]]
+ipx::merge_project_changes ports [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'd:/e1_library/f2_light_eye_plat2/light_eye_pl_work/light_eye_v2_1.cores/component.xml' ignored by IP packager.
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path d:/e1_library/f2_light_eye_plat2/light_eye_pl_work/light_eye_v2_1.cores
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'd:/e1_library/f2_light_eye_plat2/light_eye_pl_work/light_eye_v2_1.cores'
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jul 31 19:19:09 2022...

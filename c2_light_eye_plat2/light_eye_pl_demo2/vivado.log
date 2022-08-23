@@ -1,0 +1,1423 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Aug 10 21:39:17 2022
+# Process ID: 2612
+# Current directory: D:/e1_library/f2_light_eye_plat2/light_eye_pl_demo2
+# Command line: vivado.exe -source D:\e1_library\f2_light_eye_plat2\light_eye_pl_demo2\light_eye.tcl
+# Log file: D:/e1_library/f2_light_eye_plat2/light_eye_pl_demo2/vivado.log
+# Journal file: D:/e1_library/f2_light_eye_plat2/light_eye_pl_demo2\vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-1460] Use of init.tcl in C:/Users/FJB/AppData/Roaming/Xilinx/Vivado/init.tcl is deprecated. Please use Vivado_init.tcl 
+Sourcing tcl script 'C:/Users/FJB/AppData/Roaming/Xilinx/Vivado/init.tcl'
+start_gui
+source {D:\e1_library\f2_light_eye_plat2\light_eye_pl_demo2\light_eye.tcl}
+# variable My_File [file normalize [info script]]
+# set prj_path_file [file nativename $My_File]
+# puts $prj_path_file
+D:\e1_library\f2_light_eye_plat2\light_eye_pl_demo2\light_eye.tcl
+# set prj_path [file dirname $prj_path_file]
+# set prj_name [file tail $prj_path_file]
+# set prj_name [string trimright $prj_name ?.tcl?] 
+# puts $prj_name 
+light_eye
+# if { [regexp {_(plat)([0-9]*)/} $prj_path -> v1 v2] } {
+#     if {$v2 == ""} {
+#         set v2 0
+#     }  
+# } else {
+#     set v2 0
+# }
+# if { [regexp {_pl_(demo)([0-9]*)} $prj_path -> v3 v4] } {
+#     set v3 0$v4 
+# } elseif { [regexp {_pl_(work)([0-9]*)} $prj_path -> v3 v4] } {
+#     set v3 1$v4 
+# } elseif { [regexp {_pl_(core)([0-9]*)} $prj_path -> v3 v4] } {
+#     set v3 2$v4 
+# } else {
+#     set v3 00
+# }
+# append prj_name "_v${v2}_${v3}"
+# create_project $prj_name $prj_path -part xczu2cg-sfvc784-2-e
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/software_fpga/xilinx_software/Vivado/2021.1/data/ip'.
+create_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:08 . Memory (MB): peak = 1258.211 ; gain = 0.000
+# set_property compxlib.modelsim_compiled_library_dir E:/software_fpga/xilinx_software/sim_lib [current_project]
+# set_property target_simulator ModelSim [current_project]
+# set_property -name {modelsim.simulate.vsim.more_options} -value {-coverage} -objects [get_filesets sim_1]
+# set prj_srcs_path $prj_path
+# append prj_srcs_path "/"
+# append prj_srcs_path $prj_name
+# append prj_srcs_path ".srcs"
+# file mkdir $prj_srcs_path/sources_1/new
+# file mkdir $prj_srcs_path/sources_1/ip
+# close [ open $prj_srcs_path/sources_1/ip/list_ip.tcl w]
+# file mkdir $prj_srcs_path/constrs_1
+# file mkdir $prj_srcs_path/constrs_1/new
+# close [ open $prj_srcs_path/constrs_1/new/physic.xdc w ]
+# add_files -fileset constrs_1 $prj_srcs_path/constrs_1/new/physic.xdc
+# close [ open $prj_srcs_path/constrs_1/new/timing.xdc w ]
+# add_files -fileset constrs_1 $prj_srcs_path/constrs_1/new/timing.xdc
+# file mkdir $prj_srcs_path/sim_1
+# file copy -force $::env(P_CREATE_PROJECT)tb_assert.sv $prj_srcs_path/sim_1/tb_${prj_name}.sv
+# add_files -fileset sim_1 $prj_srcs_path/sim_1/tb_${prj_name}.sv
+# set prj_dat_path $prj_path
+# append prj_dat_path "/"
+# append prj_dat_path $prj_name
+# append prj_dat_path ".dat"
+# file mkdir $prj_dat_path
+# set prj_drc_path $prj_path
+# append prj_drc_path "/"
+# append prj_drc_path $prj_name
+# append prj_drc_path ".drc"
+# file mkdir $prj_drc_path
+# set prj_boots_path $prj_path
+# append prj_boots_path "/"
+# append prj_boots_path $prj_name
+# append prj_boots_path ".boot"
+# file mkdir $prj_boots_path
+# set prj_ips_path $prj_path
+# append prj_ips_path "/"
+# append prj_ips_path $prj_name
+# append prj_ips_path ".ips"
+# file mkdir $prj_ips_path
+# set now [clock seconds]
+# set timestr [clock format $now -format "%y/%m/%d %H:%M:%S"]
+# set s_tcl_sum version.md
+# set p_tcl_sum $::env(P_TCL_VERSION)
+# set f_tcl_sum $p_tcl_sum$s_tcl_sum
+# set f_prj_ver "${prj_path}/version.md"
+# set f [open $f_prj_ver w+]
+# add_files -fileset utils_1 -norecurse $f_prj_ver
+# set f [open $f_tcl_sum a+]
+# puts $f {*}
+# puts $f {* ##################   create project   ############################}
+# puts $f "* project name:${prj_name}"
+# puts $f "* created time:${timestr}"    
+# puts $f "* project path:${prj_path}"
+# puts $f "* version file:\[version.md\](${f_prj_ver})"
+# puts $f {* ##################################################################}
+# puts $f {*}
+# close $f
+# set_property  ip_repo_paths  $::env(P_CREATE_PROJECT)BUS_VIVADO [current_project]
+update_compile_order -fileset sim_1
+close [ open D:/e1_library/f2_light_eye_plat2/light_eye_pl_demo2/light_eye_v2_02.srcs/sources_1/new/shk_chose.v w ]
+add_files D:/e1_library/f2_light_eye_plat2/light_eye_pl_demo2/light_eye_v2_02.srcs/sources_1/new/shk_chose.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+[Wed Aug 10 22:27:00 2022] Launched synth_1...
+Run output will be captured here: D:/e1_library/f2_light_eye_plat2/light_eye_pl_demo2/light_eye_v2_02.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xczu2cg-sfvc784-2-e
+INFO: [Device 21-403] Loading part xczu2cg-sfvc784-2-e
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2081.715 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 288 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/e1_library/f2_light_eye_plat2/light_eye_pl_demo2/light_eye_v2_02.srcs/constrs_1/new/physic.xdc]
+Finished Parsing XDC File [D:/e1_library/f2_light_eye_plat2/light_eye_pl_demo2/light_eye_v2_02.srcs/constrs_1/new/physic.xdc]
+Parsing XDC File [D:/e1_library/f2_light_eye_plat2/light_eye_pl_demo2/light_eye_v2_02.srcs/constrs_1/new/timing.xdc]
+Finished Parsing XDC File [D:/e1_library/f2_light_eye_plat2/light_eye_pl_demo2/light_eye_v2_02.srcs/constrs_1/new/timing.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2081.715 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 288 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 288 instances
+
+open_run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:10 . Memory (MB): peak = 2245.707 ; gain = 987.496
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+report_timing -to m_shk_0_dmosi -delay_type min_max -max_paths 10 -sort_by group -input_pins -routable_nets -name m_shk_0_dmosi
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'm_shk_0_dmosi' matched to 'port' objects.
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -to_pins  -max_paths 10 -nworst 1 -delay_type min_max -sort_by group.
+close_design
+source "$::env(P_VIVADO_WORK)get_user_proc.tcl" ; gen_ip_tcl
+# proc get_prj_version {type} {
+#     #set basic parameter
+#     set RTL_LANGUAGE "v"
+#     # get top file 
+#     set n_top [get_property TOP [current_fileset]]
+#     set s_top ".$RTL_LANGUAGE"
+#     set p_top [file dirname [get_files $n_top$s_top]]
+#     append p_top "/"
+#     set pns_top "$p_top$n_top$s_top"
+#     # get plat version
+#     set v2 0
+#     if { [regexp {_(plat)([0-9]*)/} $p_top -> vv1 vv2] } {
+#         if {$vv1 == "plat"} {
+#             set v2 "0$vv2"
+#         } 
+#     } 
+#     # get project version
+#     if { [regexp {_pl_(demo)([0-9]*)/} $p_top -> v3 v4] } {
+#         set v3 0$v4 
+#     } elseif { [regexp {_pl_(work)([0-9]*)/} $p_top -> v3 v4] } {
+#         set v3 1$v4 
+#     } elseif { [regexp {_pl_(core)([0-9]*)/} $p_top -> v3 v4] } {
+#         set v3 2$v4 
+#     } else {
+#         set v3 00
+#     }
+#     # get top file version
+#     set v_file [open $pns_top r]
+#     set data [read $v_file]
+#     close $v_file 
+#     set v5 0
+#     if {[regexp {Revision:[\s]*([0-9]+)\.([0-9]+)} $data -> file_id file_ver] == 1} {
+#         set v5 $file_ver
+#     } 
+#     set v5 "top$v5"
+#     # get time version
+#     set v6 0
+#     set now [clock seconds]
+#     set timestr [clock format $now -format "%m%d_%H%M"]
+#     set v6 $timestr
+#     # return version
+#     if {$type == 1} {
+#         return "${v5}_${v6}"
+#     } elseif {$type == 2} {
+#         return "${v5}"
+#     } else {
+#         return "${v2}_${v3}_${v5}_${v6}"
+#     }
+# }
+# proc get_file_version {en_view} {
+#     #set basic parameter
+#     set RTL_LANGUAGE "v"
+#     set P_VSCODE {'E:\\software_fpga\\text_edit\\Microsoft VS Code'}
+#     set N_VSCODE Code.exe
+#     #get all source file
+#     set file_list [ get_files -of [get_filesets [current_fileset ]]]
+#     # init file list
+#     set list_ver  [list "### version of [current_project]:\n" "* Number of version in level:\n    * 0~9:" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "\n* file tower\n"]
+#     set addr_base [llength $list_ver]
+#     set list_add [concat [lrepeat 1000 ""]]
+#     set list_ver [concat $list_ver $list_add]
+#     # get version list
+#     for {set i 0} {$i < [llength $file_list]} {set i [expr $i + 1] } {
+#         # get current file to solve
+#         set p_file [lindex $file_list $i]
+#         set v_file [open $p_file r]
+#         set data [read $v_file]
+#         close $v_file 
+#         # get file name
+#         regexp -nocase [subst -nocommands -nobackslashes {/([\w]+)(?:\.)$RTL_LANGUAGE}] $p_file -> n_file 
+# 
+#         # file version error
+#         if {[regexp {Revision:[\s]*([0-9]+)\.([0-9]+)} $data -> file_id file_ver] == 0} {
+#             puts "file version get fail"
+#             continue;
+#         }
+#         if {[regexp -nocase [subst -nocommands -nobackslashes {Revision[\s]*${file_id}(?:\.)${file_ver}[\s]*-([\s\w]*)}] $data -> v_ver ]==0} {
+#             puts "file context get fail"
+#             continue;
+#         }
+#         # update file number
+#         set addr_id [expr $file_id + 2]
+#         set old_numb [lrange $list_ver $addr_id $addr_id]
+#         lset list_ver $addr_id [expr $old_numb + 1]
+#         # get new info sort to insert
+#         set addr_data [expr $addr_base - 1]
+#         for {set j 2} {$j <= $addr_id} {set j [expr $j + 1] } {
+#             set addr_data [expr $addr_data + [lrange $list_ver $j $j]]
+#         }
+#         # write it to list of version
+#         set ver_space [string repeat "-" [expr $file_id * 4 + 2]]
+#         set ver_line "v${file_id}.${file_ver}${ver_space}\[${n_file}\](${p_file}):${v_ver}\n"
+#         puts "addr_data = $addr_data"
+#         lset list_ver [linsert $list_ver $addr_data $ver_line]
+#         puts "list_ver = $list_ver"
+#     }
+#     # write list to file
+#     set f_version [get_property DIRECTORY [current_project]]/version.md
+#     set f [open $f_version a+]
+#     puts $f "\n\n## All file version"
+#     set now [clock seconds]
+#     set timestr [clock format $now -format "%y/%m/%d %H:%M:%S"]
+#     puts $f "### ${timestr}"
+#     for {set k 0} {$k < [llength $list_ver]} {set k [expr $k + 1] } {
+#         puts -nonewline $f [lindex $list_ver $k]
+#     }
+#     close $f
+#     # open file
+#     if {$en_view} {
+#         exec cmd.exe /c "start $N_VSCODE $f_version" &
+#     }
+#     return $i 
+#     } 
+# proc get_tb_file {} {
+#     # set basic parameter
+#     set RTL_LANGUAGE "v"
+#     # get top file 
+#     set n_top [get_property TOP [current_fileset]]
+#     set s_top ".$RTL_LANGUAGE"
+#     set p_top [file dirname [get_files $n_top$s_top]]
+#     append p_top "/"
+#     # open file and get data
+#     set v_file [open $p_top$n_top$s_top r]
+#     set data [read $v_file]
+#     close $v_file 
+#     ######################
+#     # scan parameter 
+#     set list_name_para [list]
+#     set list_value_para [list]
+#     set list_port [regexp -all -inline {\n[\s]*parameter[\s]+([\w0-9]+)[\s]*=[\s]*([0-9]+)[\s]*[,|\n]} $data]
+#     if {[llength $list_port] == 0} {
+#         puts {no parameter like parameter x = n }
+#     }
+#     puts $list_port
+#     for {set i 1} {$i < [expr [llength $list_port]] } {set i [expr $i + 3]} {
+#         set j [expr $i + 1]
+#         set para_name [lrange $list_port $i $i]
+#         puts $para_name
+#         set para_value [lrange $list_port $j $j]
+#         puts $para_value
+#         lappend list_name_para $para_name
+#         lappend list_value_para $para_value
+#     }
+#     ######################
+#     set list_name_port [list]
+#     set list_width_port [list]
+#     # scan module ports
+#     set list_port [regexp -all -inline {\n[\s]*input[\s]+([\w]+)} $data]
+#     if {[llength $list_port] == 0} {
+#         puts {no input port like input <port> }
+#     }
+#     puts $list_port
+#     for {set i 1} {$i < [expr [llength $list_port]] } {set i [expr $i + 2]} {
+#         set port_name1 [lrange $list_port $i $i]
+#         puts $port_name1
+#         lappend list_name_port $port_name1
+#         lappend list_width_port 1
+#     }
+#     # scan module ports 2
+#     set list_port [regexp -all -inline {\n[\s]*input[\s]*\[([\w0-9]+)[\s]*-[\s]*1[\s]*\:[\s]*0\][\s]*([\w]+)[\s]*} $data]
+#     if {[llength $list_port] == 0} {
+#         puts {no input port like input [WD-1:0] <port> }
+#     }
+#     puts $list_port
+#     for {set i 1} {$i < [expr [llength $list_port]] } {set i [expr $i + 3]} {
+#         set j [expr $i + 1]
+#         set port_width2 [lrange $list_port $i $i]
+#         puts $port_width2
+#         set port_name2 [lrange $list_port $j $j]
+#         puts $port_name2
+#         lappend list_name_port $port_name2
+#         lappend list_width_port $port_width2
+#     }
+#     # scan ports 3
+#     set list_port [regexp -all -inline {\n[\s]*input[\s]*\[([0-9]+)[\s]*\:[\s]*0\][\s]*([\w]+)[\s]*} $data]
+#     if {[llength $list_port] == 0} {
+#         puts {no input port like input [n:0] <port> }
+#     }
+#     puts $list_port
+#     for {set i 1} {$i < [expr [llength $list_port]] } {set i [expr $i + 3]} {
+#         set j [expr $i + 1]
+#         set port_width3 [expr [lrange $list_port $i $i] + 1]
+#         puts $port_width3
+#         set port_name3 [lrange $list_port $j $j]
+#         puts $port_name3
+#         lappend list_name_port $port_name3
+#         lappend list_width_port $port_width3
+#     }
+#     puts $list_name_para
+#     puts $list_value_para
+#     puts $list_name_port
+#     puts $list_width_port
+# 
+#     # cope file
+#     set pns_tb_file $::env(P_VIVADO_WORK)testbench.v
+# 
+#     set p_prj [get_property DIRECTORY [current_project]]
+#     set n_prj [current_project]
+#     set n_prj_srcs ${n_prj}.srcs
+#     set prj_srcs_path $p_prj/$n_prj_srcs
+#     set pns_tb_now $prj_srcs_path/sim_1/tb_$n_top$s_top
+#     file copy -force $pns_tb_file $pns_tb_now
+#     
+#     # get data
+#     set v_file [open $pns_tb_now r]
+#     set data [read $v_file]
+#     close $v_file 
+#     # change date
+#     set now [clock seconds]
+#     set timestr [clock format $now -format "%y/%m/%d %H:%M:%S"]
+#     set tb_time "// Create Date: $timestr\n"
+#     regsub {// Create Date:[\s]*[0-9]+/[0-9]+/[0-9]+[\s]+[0-9]+:[0-9]+:[0-9]+[\s]*\n} $data $tb_time data
+#     # change mdoule name
+#     set tb_module "// Module Name: tb_$n_top\n"
+#     regsub {// Module Name:[\s]*[\w]+[\s]*\n} $data $tb_module data
+#     # change file module name
+#     set tb_head "module tb_$n_top \#"
+#     regsub {module[\s]+(testbench)[\s]*\#} $data $tb_head data
+#     # add para
+#     for {set i [expr [llength $list_name_para] - 1]} {$i >= 0} {set i [expr $i - 1]} {
+#         set n_para [lrange $list_name_para $i $i]
+#         set v_para [lrange $list_value_para $i $i]
+#         set tb_para "//_list_para_//\nlocalparam $n_para = $v_para\;\n"
+#         regsub  {//_list_para_//[\s]*\n} $data "$tb_para" data
+#     }
+#     
+#     # add port list
+#     set sys_clk ""
+#     for {set i [expr [llength $list_name_port] - 1]} {$i >= 0} {set i [expr $i - 1]} {
+#         set tb_port "//_list_port_//\nreg \[ [lrange $list_width_port $i $i]-1 :0\]  [lrange $list_name_port $i $i] = 0\;\n"
+#         regsub  {//_list_port_//[\s]*\n} $data "$tb_port" data
+#         set n_port [lrange $list_name_port $i $i]
+#         if { [regexp {[\w]+_clk}  $n_port] } {
+#             set sys_clk $n_port
+#         }
+#     }
+#     # add logic list
+#     set HALF_CLK 5
+#     set RST_LOW 100
+#     set RST_HGH 100000
+#     set DAT_DLY 10 
+#     set ARRAY_DLY 10
+# 
+#     set match_cnt 0
+#     for {set i [expr [llength $list_name_port] - 1]} {$i >= 0} {set i [expr $i - 1]} {
+#         set n_logic [lrange $list_name_port $i $i]
+#         set w_logic [lrange $list_width_port $i $i]
+#         set tb_pre "//_list_logic_//\n"
+#         set tb_logic "// logic to $n_logic \n"
+#         if { [regexp {[\w]+_clk}  $n_logic] } {
+#             append tb_logic "always\n"    
+#             append tb_logic "begin\n"
+#             append tb_logic "    #$HALF_CLK\n"
+#             append tb_logic "    $n_logic = \~$n_logic;\n"
+#             append tb_logic "end\n"
+#             set match_cnt [incr match_cnt]
+#         } elseif { [regexp {[\w]+_rst_n}  $n_logic] } {
+#             append tb_logic "always\n"    
+#             append tb_logic "begin\n"
+#             append tb_logic "    #$RST_LOW\n"
+#             append tb_logic "    $n_logic = 1'b1;\n"
+#             append tb_logic "    #$RST_HGH\n"
+#             append tb_logic "    $n_logic = 1'b0;\n"
+#             append tb_logic "    #$RST_LOW\n"
+#             append tb_logic "    \$stop();\n"
+#             append tb_logic "end\n"
+#             set match_cnt [incr match_cnt]
+#         } elseif { [regexp {[\w]+_data} $n_logic]  } {
+#             append tb_logic "always\n"    
+#             append tb_logic "begin\n"
+#             append tb_logic "    repeat($DAT_DLY)@(posedge $sys_clk);\n"
+#             append tb_logic "    $n_logic = {\$random()%(2 << ($w_logic))};\n"
+#             append tb_logic "end\n"
+#             set match_cnt [incr match_cnt]
+#         } elseif { [regexp {[\w]+_(cloumn|row|cloumn_n|row_n)} $n_logic]  } {
+#             append tb_logic "always\n"    
+#             append tb_logic "begin\n"
+#             append tb_logic "    repeat($DAT_DLY)@(posedge $sys_clk);\n"
+#             append tb_logic "    if($n_logic == 0)\n"
+#             append tb_logic "    begin\n"
+#             append tb_logic "        $n_logic = 1;\n"
+#             append tb_logic "    end\n"
+#             append tb_logic "    else\n"
+#             append tb_logic "    begin\n"
+#             append tb_logic "        $n_logic = $n_logic << 1;\n"
+#             append tb_logic "    end\n"
+#             append tb_logic "end\n"
+#             set match_cnt [incr match_cnt]
+#         }
+#         regsub  {//_list_logic_//[\s]*\n} $data "$tb_pre$tb_logic" data
+#     }
+#     # add list of module
+#     set tb_mdle "//_list_module_//\n"
+#     append tb_mdle "$n_top #(\n"
+#     for {set i 0} {$i < [llength $list_name_para]} {set i [incr i]} {
+#         set n_para [lrange $list_name_para $i $i]
+#         if {$i ==[expr [llength $list_name_para] - 1] } {
+#             append tb_mdle "    .$n_para\($n_para)\n"
+#         } else {
+#             append tb_mdle "    .$n_para\($n_para),\n"
+#         }
+#     } 
+#     append tb_mdle "    )u_$n_top\(\n"
+#     for {set i 0} {$i < [llength $list_name_port]} {set i [incr i]} {
+#         set n_port [lrange $list_name_port $i $i]
+#         set nc_port $n_port
+#         if { [regexp {[\w]+_(cloumn_n|row_n)} $n_port] == 1} {
+#             set nc_port "~$n_port"
+#         }
+#         if {$i ==[expr [llength $list_name_port] - 1] } {
+#             append tb_mdle "    .$n_port\($nc_port)\n"
+#         } else {
+#             append tb_mdle "    .$n_port\($nc_port),\n"
+#         }
+#     } 
+#     # set module 
+#     append tb_mdle ");\n"
+#     set timestr_v [clock format $now -format "_%y_%m_%d_%H_%M_%S"]
+# 
+#     # output vcd file
+#     append tb_mdle "initial\n"
+#     append tb_mdle "begin\n"
+#     append tb_mdle "    \$dumpfile(\"u_$n_top$timestr_v.vcd\");\n"
+#     append tb_mdle "    \$dumpvars;\n"
+#     append tb_mdle "end\n"
+#     regsub  {//_list_module_//[\s]*\n} $data "$tb_mdle" data
+# 
+#     set v_file [open $pns_tb_now w+]
+#     puts $v_file $data
+#     close $v_file 
+#     # set prj property
+#     add_files -quiet -fileset sim_1 $pns_tb_now
+#     set_property top tb_$n_top [get_filesets sim_1]
+# 
+#     # match whole port and auto sim
+#     puts $match_cnt
+#     if {$match_cnt == [expr [llength $list_name_port]]} {
+#         # launch_simulation
+#         puts {info: succeed}
+#     } else {
+#         puts {error: ports not enough}
+#     }
+# }
+# proc gen_ip_tcl {} {
+#     # _core change PORT to bus name : s_axi_Uaxi_din
+#     set n_prj [current_project]
+#     set p_prj [get_property DIRECTORY [current_project]]
+#     set pn_cores "$p_prj/${n_prj}.cores"
+#     set pn_eprj "${n_prj}_core"
+#     ipx::package_project -root_dir $pn_cores -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false
+#     ipx::unload_core $pn_cores/component.xml
+#     ipx::edit_ip_in_project -upgrade true -name $pn_eprj -directory $pn_cores $pn_cores/component.xml
+#     set_property vendor_display_name fpgaPublish [ipx::current_core]
+#     set_property vendor fpgaPublish [ipx::current_core]
+#     # add bram interface
+#     # set basic parameter
+#     set RTL_LANGUAGE "v"
+#     # get top file 
+#     set n_top [get_property TOP [current_fileset]]
+#     set s_top ".$RTL_LANGUAGE"
+#     set p_top [file dirname [get_files $n_top$s_top]]
+#     append p_top "/"
+#     # open file and get data
+#     set v_file [open $p_top$n_top$s_top r]
+#     set data [read $v_file]
+#     close $v_file 
+#     # get port
+#     ## port1
+#     set list_name_port [list]
+#     set list_port [regexp -all -inline  {\n[\s]*(input|output)[\s]*([\w]+)} $data]
+#     llength $list_port
+#     for {set i 1} {$i < [expr [llength $list_port]] } {set i [expr $i + 3]} {
+#         set j [expr $i + 1]
+#         set port_name1 [lrange $list_port $j $j]
+#         puts $port_name1
+#         lappend list_name_port $port_name1
+#     }
+#     ## port2
+#     set list_port [regexp -all -inline  {\n[\s]*(input|output)[\s]*\[([\w0-9]+)[\s]*-[\s]*1[\s]*\:[\s]*0\][\s]*([\w]+)[\s]*} $data]
+#     llength $list_port
+#     for {set i 1} {$i < [expr [llength $list_port]] } {set i [expr $i + 4]} {
+#         set j [expr $i + 2]
+#         set port_name2 [lrange $list_port $j $j]
+#         lappend list_name_port $port_name2
+#     }
+#     ##port3
+#     set list_port [regexp -all -inline  {\n[\s]*(input|output)[\s]*\[([0-9]+)[\s]*\:[\s]*0\][\s]*([\w]+)[\s]*} $data]
+#     llength $list_port
+#     for {set i 1} {$i < [expr [llength $list_port]] } {set i [expr $i + 4]} {
+#         set j [expr $i + 2]
+#         set port_name2 [lrange $list_port $j $j]
+#         lappend list_name_port $port_name2
+#     }
+#     puts $list_name_port
+#     ## search BRAM 
+#     set bram_port [list]
+#     for {set i 0} {$i < [expr [llength $list_name_port]] } {set i [expr $i + 1]} {
+#         set port_name [lrange $list_name_port $i $i]
+#         puts $port_name
+#         if {[regexp {(m|s)_bram} $port_name]} {
+#             lappend bram_port $port_name
+#         }
+#     }
+#     puts $bram_port
+#     ipx::infer_bus_interface $bram_port xilinx.com:interface:bram_rtl:1.0 [ipx::current_core]
+#     ## get the BUS standard
+#     
+# }
+# proc copy_tcl_cmd {} {
+#     #get time
+#     set now [clock seconds]
+#     set timestr [clock format $now -format "%y/%m/%d %H:%M:%S"]
+#     # get file
+#     set n_prj [current_project]
+#     set p_prj [get_property DIRECTORY [current_project]]
+#     set n_src [current_fileset]
+#     set pn_srcs_ip "$p_prj/${n_prj}.srcs/$n_src/ip/list_ip.tcl"
+#     set f [open $pn_srcs_ip a+]
+#     # scan history
+#     set h_begin 1
+#     set h_end 1
+#     if {[history nextid] <= 100} {
+#         set h_begin 1
+#         set h_end [history nextid]
+#     } else {
+#         set h_begin [expr [history nextid] - 100]
+#         set h_end [history nextid]
+#     }
+#     set n_comp ""
+#     for {set i $h_begin} {$i < $h_end} {set i [expr $i + 1]} {
+#         set cmd [history event $i]
+#         set list_cmd [regexp -all -inline {[\s]*create_ip[\s]+.*-module_name[\s]+([\w]+)} $cmd]  
+#         if {[llength $list_cmd] == 2} {
+#             set n_comp [lrange $list_cmd 1 1]
+#             puts $f "\n\#$n_comp:$timestr"
+#             puts $f $cmd
+#         } elseif {[regexp "\^(set_property\[\\s\]+-dict\[\\s\]+).*(\[get_ips\[\\s\]+$n_comp\])\$" $cmd] == 1} {
+#             puts $f $cmd
+#             puts $f "#$n_comp:end"
+#         } 
+#     }
+#     close $f
+#     set f [open $pn_srcs_ip r]
+#     set data [read $f]
+#     close $f 
+#     puts $data 
+#     
+# }
+# proc get_zynq_core {} {
+# 
+#     set n_bd [current_project]
+#     create_bd_design $n_bd
+#     #"bd1_platform"
+#     #update_compile_order -fileset sources_1
+# 
+#     startgroup
+#     create_bd_cell -type ip -vlnv xilinx.com:ip:zynq_ultra_ps_e:3.3 zynq_ultra_ps_e_0
+#     endgroup
+# 
+#     #set bank voltage
+#     set_property -dict [list CONFIG.PSU_BANK_0_IO_STANDARD {LVCMOS18} CONFIG.PSU_BANK_1_IO_STANDARD {LVCMOS18} CONFIG.PSU_BANK_2_IO_STANDARD {LVCMOS18}] [get_bd_cells zynq_ultra_ps_e_0]
+# 
+#     #set low speed
+#     ##set QSPI
+#     set_property -dict [list CONFIG.PSU__QSPI__PERIPHERAL__ENABLE {1} CONFIG.PSU__QSPI__PERIPHERAL__DATA_MODE {x4} CONFIG.PSU__QSPI__GRP_FBCLK__ENABLE {1}] [get_bd_cells zynq_ultra_ps_e_0]
+# 
+#     ##set SD0
+#     set_property -dict [list CONFIG.PSU__SD0__PERIPHERAL__ENABLE {1} CONFIG.PSU__SD0__SLOT_TYPE {eMMC} CONFIG.PSU__SD0__RESET__ENABLE {1}] [get_bd_cells zynq_ultra_ps_e_0]
+# 
+#     ##set SD1
+#     set_property -dict [list CONFIG.PSU__SD1__PERIPHERAL__ENABLE {1} CONFIG.PSU__SD1__PERIPHERAL__IO {MIO 46 .. 51} CONFIG.PSU__SD1__GRP_CD__ENABLE {1} CONFIG.PSU__SD1__SLOT_TYPE {SD 2.0}] [get_bd_cells zynq_ultra_ps_e_0]
+# 
+#     ##set I2C 1
+#     set_property -dict [list CONFIG.PSU__I2C1__PERIPHERAL__ENABLE {1} CONFIG.PSU__I2C1__PERIPHERAL__IO {MIO 32 .. 33}] [get_bd_cells zynq_ultra_ps_e_0]
+# 
+#     ##set Uart1
+#     set_property -dict [list CONFIG.PSU__UART1__PERIPHERAL__ENABLE {1} CONFIG.PSU__UART1__PERIPHERAL__IO {MIO 24 .. 25}] [get_bd_cells zynq_ultra_ps_e_0]
+# 
+#     ##set TTC 0 ~ TTC 3
+#     set_property -dict [list CONFIG.PSU__TTC0__PERIPHERAL__ENABLE {1} CONFIG.PSU__TTC1__PERIPHERAL__ENABLE {1} CONFIG.PSU__TTC2__PERIPHERAL__ENABLE {1} CONFIG.PSU__TTC3__PERIPHERAL__ENABLE {1}] [get_bd_cells zynq_ultra_ps_e_0]
+# 
+#     #set high speed
+#     ## set GEM 3
+#     set_property -dict [list CONFIG.PSU__ENET3__PERIPHERAL__ENABLE {1} CONFIG.PSU__ENET3__GRP_MDIO__ENABLE {1}] [get_bd_cells zynq_ultra_ps_e_0]
+# 
+#     ## set USB 0
+#     set_property -dict [list CONFIG.PSU__USB0__PERIPHERAL__ENABLE {1} CONFIG.PSU__USB0__RESET__ENABLE {1} CONFIG.PSU__USB0__RESET__IO {MIO 44} CONFIG.PSU__USB__RESET__MODE {Shared MIO Pin} CONFIG.PSU__USB3_0__PERIPHERAL__ENABLE {1} CONFIG.PSU__USB3_0__PERIPHERAL__IO {GT Lane1}] [get_bd_cells zynq_ultra_ps_e_0]
+# 
+#     ## set PCIe
+#     set_property -dict [list CONFIG.PSU__DPAUX__PERIPHERAL__IO {MIO 27 .. 30} CONFIG.PSU__PCIE__PERIPHERAL__ENABLE {1} CONFIG.PSU__PCIE__PERIPHERAL__ROOTPORT_IO {MIO 37} CONFIG.PSU__PCIE__DEVICE_PORT_TYPE {Root Port} CONFIG.PSU__PCIE__CLASS_CODE_SUB {0x04} CONFIG.PSU__DISPLAYPORT__PERIPHERAL__ENABLE {1}] [get_bd_cells zynq_ultra_ps_e_0]
+# 
+#     #set clock
+#     set_property -dict [list CONFIG.PSU__USB0__REF_CLK_SEL {Ref Clk1} CONFIG.PSU__CRF_APB__DP_VIDEO_REF_CTRL__SRCSEL {VPLL} CONFIG.PSU__CRF_APB__DP_AUDIO_REF_CTRL__SRCSEL {RPLL} CONFIG.PSU__CRF_APB__DP_STC_REF_CTRL__SRCSEL {RPLL} CONFIG.PSU__CRF_APB__TOPSW_MAIN_CTRL__SRCSEL {APLL} CONFIG.PSU__CRL_APB__SDIO0_REF_CTRL__SRCSEL {IOPLL} CONFIG.PSU__CRL_APB__SDIO1_REF_CTRL__SRCSEL {IOPLL} CONFIG.PSU__CRL_APB__CPU_R5_CTRL__SRCSEL {IOPLL}] [get_bd_cells zynq_ultra_ps_e_0]
+# 
+#     #set DDR
+#     set_property -dict [list CONFIG.SUBPRESET1 {DDR4_MICRON_MT40A256M16GE_083E}] [get_bd_cells zynq_ultra_ps_e_0]
+# }
+# proc gen_bit_file {} {
+#     set s_version [get_prj_version {1} ]
+#     puts $s_version
+#     set n_prj [current_project]
+#     set p_prj [get_property DIRECTORY [current_project]]
+#     set n_run [current_run]
+#     set n_top [get_property TOP [current_fileset]]
+#     set p_boots "$p_prj/${n_prj}.boot"
+#     set p_bits "$p_prj/${n_prj}.runs/$n_run"
+#     set n_bit "$n_top"
+#     set s_bit ".bit"
+#     set s_ltx ".ltx"
+#     puts $p_bits/$n_top$s_bit
+#     puts [catch { file copy -force "$p_bits/$n_top$s_bit" "$p_boots/${n_top}_$s_version$s_bit" }]
+#     puts [catch { file copy -force "$p_bits/$n_top$s_ltx" "$p_boots/${n_top}_$s_version$s_ltx" }]
+# 
+#     set s_version [get_prj_version {2} ]
+#     write_hw_platform -fixed -include_bit -force -file $p_boots/${n_top}_${s_version}.xsa
+# } 
+# proc get_mem_blck {numb size} {
+#     puts $numb
+#     set tmp $size
+#     for {set n 0} {$tmp > 1} {set n [expr $n + 1] } {
+#         set tmp [expr $tmp >> 1]
+#     }
+#     puts $n
+#     set n [expr $n + 10]
+#     for {set i 0} {$i < $numb} {set i [expr $i + 1]} {
+#         create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 blk_mem_gen_$i
+#         create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.1 axi_bram_ctrl_$i
+#         set_property -dict [list CONFIG.Memory_Type {True_Dual_Port_RAM} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Use_RSTB_Pin {true} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Write_Rate {50} CONFIG.Port_B_Enable_Rate {100}] [get_bd_cells blk_mem_gen_$i]
+#         set_property -dict [list CONFIG.SINGLE_PORT_BRAM {1}] [get_bd_cells axi_bram_ctrl_$i]
+#         connect_bd_intf_net [get_bd_intf_pins axi_bram_ctrl_$i/BRAM_PORTA] [get_bd_intf_pins blk_mem_gen_$i/BRAM_PORTA]
+#         make_bd_intf_pins_external  [get_bd_intf_pins blk_mem_gen_$i/BRAM_PORTB]
+#     }
+#     for {set i 0} {$i < $numb} {set i [expr $i + 1]} {
+#         apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_LPD} Slave "/axi_bram_ctrl_$i/S_AXI" ddr_seg {Auto} intc_ip {New AXI SmartConnect} master_apm {0}}  [get_bd_intf_pins axi_bram_ctrl_$i/S_AXI]
+#     }
+#     for {set i 0} {$i < $numb} {set i [expr $i + 1]} {
+#         set_property range ${size}K [get_bd_addr_segs "zynq_ultra_ps_e_0/Data/SEG_axi_bram_ctrl_${i}_Mem0"]
+#         set addr [expr $i << $n]
+#         set addr [expr [format 0x%x $addr] | 0x80000000]
+#         set_property offset [format 0x%x $addr] [get_bd_addr_segs "zynq_ultra_ps_e_0/Data/SEG_axi_bram_ctrl_${i}_Mem0"]
+#     }
+# 
+# }
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/software_fpga/xilinx_software/Vivado/2021.1/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/e1_library/b0_script_app/2_create_project/BUS_VIVADO'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+s_shk_0_wvalid
+s_shk_0_wready
+m_shk_0_wvalid
+m_shk_0_wready
+m_shk_1_wvalid
+m_shk_1_wready
+m_shk_2_wvalid
+m_shk_2_wready
+m_shk_3_wvalid
+m_shk_3_wready
+m_shk_4_wvalid
+m_shk_4_wready
+m_shk_5_wvalid
+m_shk_5_wready
+m_shk_6_wvalid
+m_shk_6_wready
+m_shk_7_wvalid
+m_shk_7_wready
+s_shk_0_wvalid s_shk_0_wready m_shk_0_wvalid m_shk_0_wready m_shk_1_wvalid m_shk_1_wready m_shk_2_wvalid m_shk_2_wready m_shk_3_wvalid m_shk_3_wready m_shk_4_wvalid m_shk_4_wready m_shk_5_wvalid m_shk_5_wready m_shk_6_wvalid m_shk_6_wready m_shk_7_wvalid m_shk_7_wready s_shk_0_smosi s_shk_0_dmosi s_shk_0_smiso s_shk_0_dmiso m_shk_0_smosi m_shk_0_dmosi m_shk_0_smiso m_shk_0_dmiso m_shk_1_smosi m_shk_1_dmosi m_shk_1_smiso m_shk_1_dmiso m_shk_2_smosi m_shk_2_dmosi m_shk_2_smiso m_shk_2_dmiso m_shk_3_smosi m_shk_3_dmosi m_shk_3_smiso m_shk_3_dmiso m_shk_4_smosi m_shk_4_dmosi m_shk_4_smiso m_shk_4_dmiso m_shk_5_smosi m_shk_5_dmosi m_shk_5_smiso m_shk_5_dmiso m_shk_6_smosi m_shk_6_dmosi m_shk_6_smiso m_shk_6_dmiso m_shk_7_smosi m_shk_7_dmosi m_shk_7_smiso m_shk_7_dmiso
+s_shk_0_wvalid
+s_shk_0_wready
+m_shk_0_wvalid
+m_shk_0_wready
+m_shk_1_wvalid
+m_shk_1_wready
+m_shk_2_wvalid
+m_shk_2_wready
+m_shk_3_wvalid
+m_shk_3_wready
+m_shk_4_wvalid
+m_shk_4_wready
+m_shk_5_wvalid
+m_shk_5_wready
+m_shk_6_wvalid
+m_shk_6_wready
+m_shk_7_wvalid
+m_shk_7_wready
+s_shk_0_smosi
+s_shk_0_dmosi
+s_shk_0_smiso
+s_shk_0_dmiso
+m_shk_0_smosi
+m_shk_0_dmosi
+m_shk_0_smiso
+m_shk_0_dmiso
+m_shk_1_smosi
+m_shk_1_dmosi
+m_shk_1_smiso
+m_shk_1_dmiso
+m_shk_2_smosi
+m_shk_2_dmosi
+m_shk_2_smiso
+m_shk_2_dmiso
+m_shk_3_smosi
+m_shk_3_dmosi
+m_shk_3_smiso
+m_shk_3_dmiso
+m_shk_4_smosi
+m_shk_4_dmosi
+m_shk_4_smiso
+m_shk_4_dmiso
+m_shk_5_smosi
+m_shk_5_dmosi
+m_shk_5_smiso
+m_shk_5_dmiso
+m_shk_6_smosi
+m_shk_6_dmosi
+m_shk_6_smiso
+m_shk_6_dmiso
+m_shk_7_smosi
+m_shk_7_dmosi
+m_shk_7_smiso
+m_shk_7_dmiso
+
+update_compile_order -fileset sources_1
+ipx::open_ipxact_file {d:\e1_library\f2_light_eye_plat2\light_eye_pl_demo2\light_eye_v2_02.cores\component.xml}
+WARNING: [IP_Flow 19-5226] Project source file 'd:/e1_library/f2_light_eye_plat2/light_eye_pl_demo2/light_eye_v2_02.cores/component.xml' ignored by IP packager.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_anylanguagesynthesis (Synthesis)': File 'd:/e1_library/f2_light_eye_plat2/light_eye_pl_demo2/light_eye_v2_02.cores/src/physic.xdc' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_anylanguagesynthesis (Synthesis)': File 'd:/e1_library/f2_light_eye_plat2/light_eye_pl_demo2/light_eye_v2_02.cores/src/timing.xdc' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_anylanguagesynthesis (Synthesis)': File 'd:/e1_library/f2_light_eye_plat2/light_eye_pl_demo2/light_eye_v2_02.cores/src/shk_chose.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_anylanguagebehavioralsimulation (Simulation)': File 'd:/e1_library/f2_light_eye_plat2/light_eye_pl_demo2/light_eye_v2_02.cores/src/shk_chose.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+close_project
+export_ip_user_files -of_objects  [get_files d:/e1_library/f2_light_eye_plat2/light_eye_pl_demo2/light_eye_v2_02.cores/component.xml] -no_script -reset -force -quiet
+remove_files  d:/e1_library/f2_light_eye_plat2/light_eye_pl_demo2/light_eye_v2_02.cores/component.xml
+set_property  ip_repo_paths  D:/e1_library/f2_light_eye_plat2/light_eye_pl_demo2/light_eye_v2_02.ips [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/e1_library/f2_light_eye_plat2/light_eye_pl_demo2/light_eye_v2_02.ips'.
+source "$::env(P_VIVADO_WORK)get_user_proc.tcl" ; gen_ip_tcl
+# proc get_prj_version {type} {
+#     #set basic parameter
+#     set RTL_LANGUAGE "v"
+#     # get top file 
+#     set n_top [get_property TOP [current_fileset]]
+#     set s_top ".$RTL_LANGUAGE"
+#     set p_top [file dirname [get_files $n_top$s_top]]
+#     append p_top "/"
+#     set pns_top "$p_top$n_top$s_top"
+#     # get plat version
+#     set v2 0
+#     if { [regexp {_(plat)([0-9]*)/} $p_top -> vv1 vv2] } {
+#         if {$vv1 == "plat"} {
+#             set v2 "0$vv2"
+#         } 
+#     } 
+#     # get project version
+#     if { [regexp {_pl_(demo)([0-9]*)/} $p_top -> v3 v4] } {
+#         set v3 0$v4 
+#     } elseif { [regexp {_pl_(work)([0-9]*)/} $p_top -> v3 v4] } {
+#         set v3 1$v4 
+#     } elseif { [regexp {_pl_(core)([0-9]*)/} $p_top -> v3 v4] } {
+#         set v3 2$v4 
+#     } else {
+#         set v3 00
+#     }
+#     # get top file version
+#     set v_file [open $pns_top r]
+#     set data [read $v_file]
+#     close $v_file 
+#     set v5 0
+#     if {[regexp {Revision:[\s]*([0-9]+)\.([0-9]+)} $data -> file_id file_ver] == 1} {
+#         set v5 $file_ver
+#     } 
+#     set v5 "top$v5"
+#     # get time version
+#     set v6 0
+#     set now [clock seconds]
+#     set timestr [clock format $now -format "%m%d_%H%M"]
+#     set v6 $timestr
+#     # return version
+#     if {$type == 1} {
+#         return "${v5}_${v6}"
+#     } elseif {$type == 2} {
+#         return "${v5}"
+#     } else {
+#         return "${v2}_${v3}_${v5}_${v6}"
+#     }
+# }
+# proc get_file_version {en_view} {
+#     #set basic parameter
+#     set RTL_LANGUAGE "v"
+#     set P_VSCODE {'E:\\software_fpga\\text_edit\\Microsoft VS Code'}
+#     set N_VSCODE Code.exe
+#     #get all source file
+#     set file_list [ get_files -of [get_filesets [current_fileset ]]]
+#     # init file list
+#     set list_ver  [list "### version of [current_project]:\n" "* Number of version in level:\n    * 0~9:" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "\n* file tower\n"]
+#     set addr_base [llength $list_ver]
+#     set list_add [concat [lrepeat 1000 ""]]
+#     set list_ver [concat $list_ver $list_add]
+#     # get version list
+#     for {set i 0} {$i < [llength $file_list]} {set i [expr $i + 1] } {
+#         # get current file to solve
+#         set p_file [lindex $file_list $i]
+#         set v_file [open $p_file r]
+#         set data [read $v_file]
+#         close $v_file 
+#         # get file name
+#         regexp -nocase [subst -nocommands -nobackslashes {/([\w]+)(?:\.)$RTL_LANGUAGE}] $p_file -> n_file 
+# 
+#         # file version error
+#         if {[regexp {Revision:[\s]*([0-9]+)\.([0-9]+)} $data -> file_id file_ver] == 0} {
+#             puts "file version get fail"
+#             continue;
+#         }
+#         if {[regexp -nocase [subst -nocommands -nobackslashes {Revision[\s]*${file_id}(?:\.)${file_ver}[\s]*-([\s\w]*)}] $data -> v_ver ]==0} {
+#             puts "file context get fail"
+#             continue;
+#         }
+#         # update file number
+#         set addr_id [expr $file_id + 2]
+#         set old_numb [lrange $list_ver $addr_id $addr_id]
+#         lset list_ver $addr_id [expr $old_numb + 1]
+#         # get new info sort to insert
+#         set addr_data [expr $addr_base - 1]
+#         for {set j 2} {$j <= $addr_id} {set j [expr $j + 1] } {
+#             set addr_data [expr $addr_data + [lrange $list_ver $j $j]]
+#         }
+#         # write it to list of version
+#         set ver_space [string repeat "-" [expr $file_id * 4 + 2]]
+#         set ver_line "v${file_id}.${file_ver}${ver_space}\[${n_file}\](${p_file}):${v_ver}\n"
+#         puts "addr_data = $addr_data"
+#         lset list_ver [linsert $list_ver $addr_data $ver_line]
+#         puts "list_ver = $list_ver"
+#     }
+#     # write list to file
+#     set f_version [get_property DIRECTORY [current_project]]/version.md
+#     set f [open $f_version a+]
+#     puts $f "\n\n## All file version"
+#     set now [clock seconds]
+#     set timestr [clock format $now -format "%y/%m/%d %H:%M:%S"]
+#     puts $f "### ${timestr}"
+#     for {set k 0} {$k < [llength $list_ver]} {set k [expr $k + 1] } {
+#         puts -nonewline $f [lindex $list_ver $k]
+#     }
+#     close $f
+#     # open file
+#     if {$en_view} {
+#         exec cmd.exe /c "start $N_VSCODE $f_version" &
+#     }
+#     return $i 
+#     } 
+# proc get_tb_file {} {
+#     # set basic parameter
+#     set RTL_LANGUAGE "v"
+#     # get top file 
+#     set n_top [get_property TOP [current_fileset]]
+#     set s_top ".$RTL_LANGUAGE"
+#     set p_top [file dirname [get_files $n_top$s_top]]
+#     append p_top "/"
+#     # open file and get data
+#     set v_file [open $p_top$n_top$s_top r]
+#     set data [read $v_file]
+#     close $v_file 
+#     ######################
+#     # scan parameter 
+#     set list_name_para [list]
+#     set list_value_para [list]
+#     set list_port [regexp -all -inline {\n[\s]*parameter[\s]+([\w0-9]+)[\s]*=[\s]*([0-9]+)[\s]*[,|\n]} $data]
+#     if {[llength $list_port] == 0} {
+#         puts {no parameter like parameter x = n }
+#     }
+#     puts $list_port
+#     for {set i 1} {$i < [expr [llength $list_port]] } {set i [expr $i + 3]} {
+#         set j [expr $i + 1]
+#         set para_name [lrange $list_port $i $i]
+#         puts $para_name
+#         set para_value [lrange $list_port $j $j]
+#         puts $para_value
+#         lappend list_name_para $para_name
+#         lappend list_value_para $para_value
+#     }
+#     ######################
+#     set list_name_port [list]
+#     set list_width_port [list]
+#     # scan module ports
+#     set list_port [regexp -all -inline {\n[\s]*input[\s]+([\w]+)} $data]
+#     if {[llength $list_port] == 0} {
+#         puts {no input port like input <port> }
+#     }
+#     puts $list_port
+#     for {set i 1} {$i < [expr [llength $list_port]] } {set i [expr $i + 2]} {
+#         set port_name1 [lrange $list_port $i $i]
+#         puts $port_name1
+#         lappend list_name_port $port_name1
+#         lappend list_width_port 1
+#     }
+#     # scan module ports 2
+#     set list_port [regexp -all -inline {\n[\s]*input[\s]*\[([\w0-9]+)[\s]*-[\s]*1[\s]*\:[\s]*0\][\s]*([\w]+)[\s]*} $data]
+#     if {[llength $list_port] == 0} {
+#         puts {no input port like input [WD-1:0] <port> }
+#     }
+#     puts $list_port
+#     for {set i 1} {$i < [expr [llength $list_port]] } {set i [expr $i + 3]} {
+#         set j [expr $i + 1]
+#         set port_width2 [lrange $list_port $i $i]
+#         puts $port_width2
+#         set port_name2 [lrange $list_port $j $j]
+#         puts $port_name2
+#         lappend list_name_port $port_name2
+#         lappend list_width_port $port_width2
+#     }
+#     # scan ports 3
+#     set list_port [regexp -all -inline {\n[\s]*input[\s]*\[([0-9]+)[\s]*\:[\s]*0\][\s]*([\w]+)[\s]*} $data]
+#     if {[llength $list_port] == 0} {
+#         puts {no input port like input [n:0] <port> }
+#     }
+#     puts $list_port
+#     for {set i 1} {$i < [expr [llength $list_port]] } {set i [expr $i + 3]} {
+#         set j [expr $i + 1]
+#         set port_width3 [expr [lrange $list_port $i $i] + 1]
+#         puts $port_width3
+#         set port_name3 [lrange $list_port $j $j]
+#         puts $port_name3
+#         lappend list_name_port $port_name3
+#         lappend list_width_port $port_width3
+#     }
+#     puts $list_name_para
+#     puts $list_value_para
+#     puts $list_name_port
+#     puts $list_width_port
+# 
+#     # cope file
+#     set pns_tb_file $::env(P_VIVADO_WORK)testbench.v
+# 
+#     set p_prj [get_property DIRECTORY [current_project]]
+#     set n_prj [current_project]
+#     set n_prj_srcs ${n_prj}.srcs
+#     set prj_srcs_path $p_prj/$n_prj_srcs
+#     set pns_tb_now $prj_srcs_path/sim_1/tb_$n_top$s_top
+#     file copy -force $pns_tb_file $pns_tb_now
+#     
+#     # get data
+#     set v_file [open $pns_tb_now r]
+#     set data [read $v_file]
+#     close $v_file 
+#     # change date
+#     set now [clock seconds]
+#     set timestr [clock format $now -format "%y/%m/%d %H:%M:%S"]
+#     set tb_time "// Create Date: $timestr\n"
+#     regsub {// Create Date:[\s]*[0-9]+/[0-9]+/[0-9]+[\s]+[0-9]+:[0-9]+:[0-9]+[\s]*\n} $data $tb_time data
+#     # change mdoule name
+#     set tb_module "// Module Name: tb_$n_top\n"
+#     regsub {// Module Name:[\s]*[\w]+[\s]*\n} $data $tb_module data
+#     # change file module name
+#     set tb_head "module tb_$n_top \#"
+#     regsub {module[\s]+(testbench)[\s]*\#} $data $tb_head data
+#     # add para
+#     for {set i [expr [llength $list_name_para] - 1]} {$i >= 0} {set i [expr $i - 1]} {
+#         set n_para [lrange $list_name_para $i $i]
+#         set v_para [lrange $list_value_para $i $i]
+#         set tb_para "//_list_para_//\nlocalparam $n_para = $v_para\;\n"
+#         regsub  {//_list_para_//[\s]*\n} $data "$tb_para" data
+#     }
+#     
+#     # add port list
+#     set sys_clk ""
+#     for {set i [expr [llength $list_name_port] - 1]} {$i >= 0} {set i [expr $i - 1]} {
+#         set tb_port "//_list_port_//\nreg \[ [lrange $list_width_port $i $i]-1 :0\]  [lrange $list_name_port $i $i] = 0\;\n"
+#         regsub  {//_list_port_//[\s]*\n} $data "$tb_port" data
+#         set n_port [lrange $list_name_port $i $i]
+#         if { [regexp {[\w]+_clk}  $n_port] } {
+#             set sys_clk $n_port
+#         }
+#     }
+#     # add logic list
+#     set HALF_CLK 5
+#     set RST_LOW 100
+#     set RST_HGH 100000
+#     set DAT_DLY 10 
+#     set ARRAY_DLY 10
+# 
+#     set match_cnt 0
+#     for {set i [expr [llength $list_name_port] - 1]} {$i >= 0} {set i [expr $i - 1]} {
+#         set n_logic [lrange $list_name_port $i $i]
+#         set w_logic [lrange $list_width_port $i $i]
+#         set tb_pre "//_list_logic_//\n"
+#         set tb_logic "// logic to $n_logic \n"
+#         if { [regexp {[\w]+_clk}  $n_logic] } {
+#             append tb_logic "always\n"    
+#             append tb_logic "begin\n"
+#             append tb_logic "    #$HALF_CLK\n"
+#             append tb_logic "    $n_logic = \~$n_logic;\n"
+#             append tb_logic "end\n"
+#             set match_cnt [incr match_cnt]
+#         } elseif { [regexp {[\w]+_rst_n}  $n_logic] } {
+#             append tb_logic "always\n"    
+#             append tb_logic "begin\n"
+#             append tb_logic "    #$RST_LOW\n"
+#             append tb_logic "    $n_logic = 1'b1;\n"
+#             append tb_logic "    #$RST_HGH\n"
+#             append tb_logic "    $n_logic = 1'b0;\n"
+#             append tb_logic "    #$RST_LOW\n"
+#             append tb_logic "    \$stop();\n"
+#             append tb_logic "end\n"
+#             set match_cnt [incr match_cnt]
+#         } elseif { [regexp {[\w]+_data} $n_logic]  } {
+#             append tb_logic "always\n"    
+#             append tb_logic "begin\n"
+#             append tb_logic "    repeat($DAT_DLY)@(posedge $sys_clk);\n"
+#             append tb_logic "    $n_logic = {\$random()%(2 << ($w_logic))};\n"
+#             append tb_logic "end\n"
+#             set match_cnt [incr match_cnt]
+#         } elseif { [regexp {[\w]+_(cloumn|row|cloumn_n|row_n)} $n_logic]  } {
+#             append tb_logic "always\n"    
+#             append tb_logic "begin\n"
+#             append tb_logic "    repeat($DAT_DLY)@(posedge $sys_clk);\n"
+#             append tb_logic "    if($n_logic == 0)\n"
+#             append tb_logic "    begin\n"
+#             append tb_logic "        $n_logic = 1;\n"
+#             append tb_logic "    end\n"
+#             append tb_logic "    else\n"
+#             append tb_logic "    begin\n"
+#             append tb_logic "        $n_logic = $n_logic << 1;\n"
+#             append tb_logic "    end\n"
+#             append tb_logic "end\n"
+#             set match_cnt [incr match_cnt]
+#         }
+#         regsub  {//_list_logic_//[\s]*\n} $data "$tb_pre$tb_logic" data
+#     }
+#     # add list of module
+#     set tb_mdle "//_list_module_//\n"
+#     append tb_mdle "$n_top #(\n"
+#     for {set i 0} {$i < [llength $list_name_para]} {set i [incr i]} {
+#         set n_para [lrange $list_name_para $i $i]
+#         if {$i ==[expr [llength $list_name_para] - 1] } {
+#             append tb_mdle "    .$n_para\($n_para)\n"
+#         } else {
+#             append tb_mdle "    .$n_para\($n_para),\n"
+#         }
+#     } 
+#     append tb_mdle "    )u_$n_top\(\n"
+#     for {set i 0} {$i < [llength $list_name_port]} {set i [incr i]} {
+#         set n_port [lrange $list_name_port $i $i]
+#         set nc_port $n_port
+#         if { [regexp {[\w]+_(cloumn_n|row_n)} $n_port] == 1} {
+#             set nc_port "~$n_port"
+#         }
+#         if {$i ==[expr [llength $list_name_port] - 1] } {
+#             append tb_mdle "    .$n_port\($nc_port)\n"
+#         } else {
+#             append tb_mdle "    .$n_port\($nc_port),\n"
+#         }
+#     } 
+#     # set module 
+#     append tb_mdle ");\n"
+#     set timestr_v [clock format $now -format "_%y_%m_%d_%H_%M_%S"]
+# 
+#     # output vcd file
+#     append tb_mdle "initial\n"
+#     append tb_mdle "begin\n"
+#     append tb_mdle "    \$dumpfile(\"u_$n_top$timestr_v.vcd\");\n"
+#     append tb_mdle "    \$dumpvars;\n"
+#     append tb_mdle "end\n"
+#     regsub  {//_list_module_//[\s]*\n} $data "$tb_mdle" data
+# 
+#     set v_file [open $pns_tb_now w+]
+#     puts $v_file $data
+#     close $v_file 
+#     # set prj property
+#     add_files -quiet -fileset sim_1 $pns_tb_now
+#     set_property top tb_$n_top [get_filesets sim_1]
+# 
+#     # match whole port and auto sim
+#     puts $match_cnt
+#     if {$match_cnt == [expr [llength $list_name_port]]} {
+#         # launch_simulation
+#         puts {info: succeed}
+#     } else {
+#         puts {error: ports not enough}
+#     }
+# }
+# proc gen_ip_tcl {} {
+#     # _core change PORT to bus name : s_axi_Uaxi_din
+#     set n_prj [current_project]
+#     set p_prj [get_property DIRECTORY [current_project]]
+#     set pn_cores "$p_prj/${n_prj}.cores"
+#     set pn_eprj "${n_prj}_core"
+#     ipx::package_project -root_dir $pn_cores -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false
+#     ipx::unload_core $pn_cores/component.xml
+#     ipx::edit_ip_in_project -upgrade true -name $pn_eprj -directory $pn_cores $pn_cores/component.xml
+#     set_property vendor_display_name fpgaPublish [ipx::current_core]
+#     set_property vendor fpgaPublish [ipx::current_core]
+#     # add bram interface
+#     # set basic parameter
+#     set RTL_LANGUAGE "v"
+#     # get top file 
+#     set n_top [get_property TOP [current_fileset]]
+#     set s_top ".$RTL_LANGUAGE"
+#     set p_top [file dirname [get_files $n_top$s_top]]
+#     append p_top "/"
+#     # open file and get data
+#     set v_file [open $p_top$n_top$s_top r]
+#     set data [read $v_file]
+#     close $v_file 
+#     # get port
+#     ## port1
+#     set list_name_port [list]
+#     set list_port [regexp -all -inline  {\n[\s]*(input|output)[\s]*([\w]+)} $data]
+#     llength $list_port
+#     for {set i 1} {$i < [expr [llength $list_port]] } {set i [expr $i + 3]} {
+#         set j [expr $i + 1]
+#         set port_name1 [lrange $list_port $j $j]
+#         puts $port_name1
+#         lappend list_name_port $port_name1
+#     }
+#     ## port2
+#     set list_port [regexp -all -inline  {\n[\s]*(input|output)[\s]*\[([\w0-9]+)[\s]*-[\s]*1[\s]*\:[\s]*0\][\s]*([\w]+)[\s]*} $data]
+#     llength $list_port
+#     for {set i 1} {$i < [expr [llength $list_port]] } {set i [expr $i + 4]} {
+#         set j [expr $i + 2]
+#         set port_name2 [lrange $list_port $j $j]
+#         lappend list_name_port $port_name2
+#     }
+#     ##port3
+#     set list_port [regexp -all -inline  {\n[\s]*(input|output)[\s]*\[([0-9]+)[\s]*\:[\s]*0\][\s]*([\w]+)[\s]*} $data]
+#     llength $list_port
+#     for {set i 1} {$i < [expr [llength $list_port]] } {set i [expr $i + 4]} {
+#         set j [expr $i + 2]
+#         set port_name2 [lrange $list_port $j $j]
+#         lappend list_name_port $port_name2
+#     }
+#     puts $list_name_port
+#     ## search BRAM 
+#     set bram_port [list]
+#     for {set i 0} {$i < [expr [llength $list_name_port]] } {set i [expr $i + 1]} {
+#         set port_name [lrange $list_name_port $i $i]
+#         puts $port_name
+#         if {[regexp {(m|s)_bram} $port_name]} {
+#             lappend bram_port $port_name
+#         }
+#     }
+#     puts $bram_port
+#     ipx::infer_bus_interface $bram_port xilinx.com:interface:bram_rtl:1.0 [ipx::current_core]
+#     ## get the BUS standard
+#     
+# }
+# proc copy_tcl_cmd {} {
+#     #get time
+#     set now [clock seconds]
+#     set timestr [clock format $now -format "%y/%m/%d %H:%M:%S"]
+#     # get file
+#     set n_prj [current_project]
+#     set p_prj [get_property DIRECTORY [current_project]]
+#     set n_src [current_fileset]
+#     set pn_srcs_ip "$p_prj/${n_prj}.srcs/$n_src/ip/list_ip.tcl"
+#     set f [open $pn_srcs_ip a+]
+#     # scan history
+#     set h_begin 1
+#     set h_end 1
+#     if {[history nextid] <= 100} {
+#         set h_begin 1
+#         set h_end [history nextid]
+#     } else {
+#         set h_begin [expr [history nextid] - 100]
+#         set h_end [history nextid]
+#     }
+#     set n_comp ""
+#     for {set i $h_begin} {$i < $h_end} {set i [expr $i + 1]} {
+#         set cmd [history event $i]
+#         set list_cmd [regexp -all -inline {[\s]*create_ip[\s]+.*-module_name[\s]+([\w]+)} $cmd]  
+#         if {[llength $list_cmd] == 2} {
+#             set n_comp [lrange $list_cmd 1 1]
+#             puts $f "\n\#$n_comp:$timestr"
+#             puts $f $cmd
+#         } elseif {[regexp "\^(set_property\[\\s\]+-dict\[\\s\]+).*(\[get_ips\[\\s\]+$n_comp\])\$" $cmd] == 1} {
+#             puts $f $cmd
+#             puts $f "#$n_comp:end"
+#         } 
+#     }
+#     close $f
+#     set f [open $pn_srcs_ip r]
+#     set data [read $f]
+#     close $f 
+#     puts $data 
+#     
+# }
+# proc get_zynq_core {} {
+# 
+#     set n_bd [current_project]
+#     create_bd_design $n_bd
+#     #"bd1_platform"
+#     #update_compile_order -fileset sources_1
+# 
+#     startgroup
+#     create_bd_cell -type ip -vlnv xilinx.com:ip:zynq_ultra_ps_e:3.3 zynq_ultra_ps_e_0
+#     endgroup
+# 
+#     #set bank voltage
+#     set_property -dict [list CONFIG.PSU_BANK_0_IO_STANDARD {LVCMOS18} CONFIG.PSU_BANK_1_IO_STANDARD {LVCMOS18} CONFIG.PSU_BANK_2_IO_STANDARD {LVCMOS18}] [get_bd_cells zynq_ultra_ps_e_0]
+# 
+#     #set low speed
+#     ##set QSPI
+#     set_property -dict [list CONFIG.PSU__QSPI__PERIPHERAL__ENABLE {1} CONFIG.PSU__QSPI__PERIPHERAL__DATA_MODE {x4} CONFIG.PSU__QSPI__GRP_FBCLK__ENABLE {1}] [get_bd_cells zynq_ultra_ps_e_0]
+# 
+#     ##set SD0
+#     set_property -dict [list CONFIG.PSU__SD0__PERIPHERAL__ENABLE {1} CONFIG.PSU__SD0__SLOT_TYPE {eMMC} CONFIG.PSU__SD0__RESET__ENABLE {1}] [get_bd_cells zynq_ultra_ps_e_0]
+# 
+#     ##set SD1
+#     set_property -dict [list CONFIG.PSU__SD1__PERIPHERAL__ENABLE {1} CONFIG.PSU__SD1__PERIPHERAL__IO {MIO 46 .. 51} CONFIG.PSU__SD1__GRP_CD__ENABLE {1} CONFIG.PSU__SD1__SLOT_TYPE {SD 2.0}] [get_bd_cells zynq_ultra_ps_e_0]
+# 
+#     ##set I2C 1
+#     set_property -dict [list CONFIG.PSU__I2C1__PERIPHERAL__ENABLE {1} CONFIG.PSU__I2C1__PERIPHERAL__IO {MIO 32 .. 33}] [get_bd_cells zynq_ultra_ps_e_0]
+# 
+#     ##set Uart1
+#     set_property -dict [list CONFIG.PSU__UART1__PERIPHERAL__ENABLE {1} CONFIG.PSU__UART1__PERIPHERAL__IO {MIO 24 .. 25}] [get_bd_cells zynq_ultra_ps_e_0]
+# 
+#     ##set TTC 0 ~ TTC 3
+#     set_property -dict [list CONFIG.PSU__TTC0__PERIPHERAL__ENABLE {1} CONFIG.PSU__TTC1__PERIPHERAL__ENABLE {1} CONFIG.PSU__TTC2__PERIPHERAL__ENABLE {1} CONFIG.PSU__TTC3__PERIPHERAL__ENABLE {1}] [get_bd_cells zynq_ultra_ps_e_0]
+# 
+#     #set high speed
+#     ## set GEM 3
+#     set_property -dict [list CONFIG.PSU__ENET3__PERIPHERAL__ENABLE {1} CONFIG.PSU__ENET3__GRP_MDIO__ENABLE {1}] [get_bd_cells zynq_ultra_ps_e_0]
+# 
+#     ## set USB 0
+#     set_property -dict [list CONFIG.PSU__USB0__PERIPHERAL__ENABLE {1} CONFIG.PSU__USB0__RESET__ENABLE {1} CONFIG.PSU__USB0__RESET__IO {MIO 44} CONFIG.PSU__USB__RESET__MODE {Shared MIO Pin} CONFIG.PSU__USB3_0__PERIPHERAL__ENABLE {1} CONFIG.PSU__USB3_0__PERIPHERAL__IO {GT Lane1}] [get_bd_cells zynq_ultra_ps_e_0]
+# 
+#     ## set PCIe
+#     set_property -dict [list CONFIG.PSU__DPAUX__PERIPHERAL__IO {MIO 27 .. 30} CONFIG.PSU__PCIE__PERIPHERAL__ENABLE {1} CONFIG.PSU__PCIE__PERIPHERAL__ROOTPORT_IO {MIO 37} CONFIG.PSU__PCIE__DEVICE_PORT_TYPE {Root Port} CONFIG.PSU__PCIE__CLASS_CODE_SUB {0x04} CONFIG.PSU__DISPLAYPORT__PERIPHERAL__ENABLE {1}] [get_bd_cells zynq_ultra_ps_e_0]
+# 
+#     #set clock
+#     set_property -dict [list CONFIG.PSU__USB0__REF_CLK_SEL {Ref Clk1} CONFIG.PSU__CRF_APB__DP_VIDEO_REF_CTRL__SRCSEL {VPLL} CONFIG.PSU__CRF_APB__DP_AUDIO_REF_CTRL__SRCSEL {RPLL} CONFIG.PSU__CRF_APB__DP_STC_REF_CTRL__SRCSEL {RPLL} CONFIG.PSU__CRF_APB__TOPSW_MAIN_CTRL__SRCSEL {APLL} CONFIG.PSU__CRL_APB__SDIO0_REF_CTRL__SRCSEL {IOPLL} CONFIG.PSU__CRL_APB__SDIO1_REF_CTRL__SRCSEL {IOPLL} CONFIG.PSU__CRL_APB__CPU_R5_CTRL__SRCSEL {IOPLL}] [get_bd_cells zynq_ultra_ps_e_0]
+# 
+#     #set DDR
+#     set_property -dict [list CONFIG.SUBPRESET1 {DDR4_MICRON_MT40A256M16GE_083E}] [get_bd_cells zynq_ultra_ps_e_0]
+# }
+# proc gen_bit_file {} {
+#     set s_version [get_prj_version {1} ]
+#     puts $s_version
+#     set n_prj [current_project]
+#     set p_prj [get_property DIRECTORY [current_project]]
+#     set n_run [current_run]
+#     set n_top [get_property TOP [current_fileset]]
+#     set p_boots "$p_prj/${n_prj}.boot"
+#     set p_bits "$p_prj/${n_prj}.runs/$n_run"
+#     set n_bit "$n_top"
+#     set s_bit ".bit"
+#     set s_ltx ".ltx"
+#     puts $p_bits/$n_top$s_bit
+#     puts [catch { file copy -force "$p_bits/$n_top$s_bit" "$p_boots/${n_top}_$s_version$s_bit" }]
+#     puts [catch { file copy -force "$p_bits/$n_top$s_ltx" "$p_boots/${n_top}_$s_version$s_ltx" }]
+# 
+#     set s_version [get_prj_version {2} ]
+#     write_hw_platform -fixed -include_bit -force -file $p_boots/${n_top}_${s_version}.xsa
+# } 
+# proc get_mem_blck {numb size} {
+#     puts $numb
+#     set tmp $size
+#     for {set n 0} {$tmp > 1} {set n [expr $n + 1] } {
+#         set tmp [expr $tmp >> 1]
+#     }
+#     puts $n
+#     set n [expr $n + 10]
+#     for {set i 0} {$i < $numb} {set i [expr $i + 1]} {
+#         create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 blk_mem_gen_$i
+#         create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.1 axi_bram_ctrl_$i
+#         set_property -dict [list CONFIG.Memory_Type {True_Dual_Port_RAM} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Use_RSTB_Pin {true} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Write_Rate {50} CONFIG.Port_B_Enable_Rate {100}] [get_bd_cells blk_mem_gen_$i]
+#         set_property -dict [list CONFIG.SINGLE_PORT_BRAM {1}] [get_bd_cells axi_bram_ctrl_$i]
+#         connect_bd_intf_net [get_bd_intf_pins axi_bram_ctrl_$i/BRAM_PORTA] [get_bd_intf_pins blk_mem_gen_$i/BRAM_PORTA]
+#         make_bd_intf_pins_external  [get_bd_intf_pins blk_mem_gen_$i/BRAM_PORTB]
+#     }
+#     for {set i 0} {$i < $numb} {set i [expr $i + 1]} {
+#         apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_LPD} Slave "/axi_bram_ctrl_$i/S_AXI" ddr_seg {Auto} intc_ip {New AXI SmartConnect} master_apm {0}}  [get_bd_intf_pins axi_bram_ctrl_$i/S_AXI]
+#     }
+#     for {set i 0} {$i < $numb} {set i [expr $i + 1]} {
+#         set_property range ${size}K [get_bd_addr_segs "zynq_ultra_ps_e_0/Data/SEG_axi_bram_ctrl_${i}_Mem0"]
+#         set addr [expr $i << $n]
+#         set addr [expr [format 0x%x $addr] | 0x80000000]
+#         set_property offset [format 0x%x $addr] [get_bd_addr_segs "zynq_ultra_ps_e_0/Data/SEG_axi_bram_ctrl_${i}_Mem0"]
+#     }
+# 
+# }
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_shk_0' of definition 'fpgaPublish.com:user:SHK:1.0' (from User Repositories).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_shk_1' of definition 'fpgaPublish.com:user:SHK:1.0' (from User Repositories).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_shk_2' of definition 'fpgaPublish.com:user:SHK:1.0' (from User Repositories).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_shk_3' of definition 'fpgaPublish.com:user:SHK:1.0' (from User Repositories).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_shk_4' of definition 'fpgaPublish.com:user:SHK:1.0' (from User Repositories).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_shk_5' of definition 'fpgaPublish.com:user:SHK:1.0' (from User Repositories).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_shk_6' of definition 'fpgaPublish.com:user:SHK:1.0' (from User Repositories).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_shk_7' of definition 'fpgaPublish.com:user:SHK:1.0' (from User Repositories).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_shk_0' of definition 'fpgaPublish.com:user:SHK:1.0' (from User Repositories).
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/software_fpga/xilinx_software/Vivado/2021.1/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/e1_library/f2_light_eye_plat2/light_eye_pl_demo2/light_eye_v2_02.ips'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+s_shk_0_wvalid
+s_shk_0_wready
+m_shk_0_wvalid
+m_shk_0_wready
+m_shk_1_wvalid
+m_shk_1_wready
+m_shk_2_wvalid
+m_shk_2_wready
+m_shk_3_wvalid
+m_shk_3_wready
+m_shk_4_wvalid
+m_shk_4_wready
+m_shk_5_wvalid
+m_shk_5_wready
+m_shk_6_wvalid
+m_shk_6_wready
+m_shk_7_wvalid
+m_shk_7_wready
+s_shk_0_wvalid s_shk_0_wready m_shk_0_wvalid m_shk_0_wready m_shk_1_wvalid m_shk_1_wready m_shk_2_wvalid m_shk_2_wready m_shk_3_wvalid m_shk_3_wready m_shk_4_wvalid m_shk_4_wready m_shk_5_wvalid m_shk_5_wready m_shk_6_wvalid m_shk_6_wready m_shk_7_wvalid m_shk_7_wready s_shk_0_smosi s_shk_0_dmosi s_shk_0_smiso s_shk_0_dmiso m_shk_0_smosi m_shk_0_dmosi m_shk_0_smiso m_shk_0_dmiso m_shk_1_smosi m_shk_1_dmosi m_shk_1_smiso m_shk_1_dmiso m_shk_2_smosi m_shk_2_dmosi m_shk_2_smiso m_shk_2_dmiso m_shk_3_smosi m_shk_3_dmosi m_shk_3_smiso m_shk_3_dmiso m_shk_4_smosi m_shk_4_dmosi m_shk_4_smiso m_shk_4_dmiso m_shk_5_smosi m_shk_5_dmosi m_shk_5_smiso m_shk_5_dmiso m_shk_6_smosi m_shk_6_dmosi m_shk_6_smiso m_shk_6_dmiso m_shk_7_smosi m_shk_7_dmosi m_shk_7_smiso m_shk_7_dmiso
+s_shk_0_wvalid
+s_shk_0_wready
+m_shk_0_wvalid
+m_shk_0_wready
+m_shk_1_wvalid
+m_shk_1_wready
+m_shk_2_wvalid
+m_shk_2_wready
+m_shk_3_wvalid
+m_shk_3_wready
+m_shk_4_wvalid
+m_shk_4_wready
+m_shk_5_wvalid
+m_shk_5_wready
+m_shk_6_wvalid
+m_shk_6_wready
+m_shk_7_wvalid
+m_shk_7_wready
+s_shk_0_smosi
+s_shk_0_dmosi
+s_shk_0_smiso
+s_shk_0_dmiso
+m_shk_0_smosi
+m_shk_0_dmosi
+m_shk_0_smiso
+m_shk_0_dmiso
+m_shk_1_smosi
+m_shk_1_dmosi
+m_shk_1_smiso
+m_shk_1_dmiso
+m_shk_2_smosi
+m_shk_2_dmosi
+m_shk_2_smiso
+m_shk_2_dmiso
+m_shk_3_smosi
+m_shk_3_dmosi
+m_shk_3_smiso
+m_shk_3_dmiso
+m_shk_4_smosi
+m_shk_4_dmosi
+m_shk_4_smiso
+m_shk_4_dmiso
+m_shk_5_smosi
+m_shk_5_dmosi
+m_shk_5_smiso
+m_shk_5_dmiso
+m_shk_6_smosi
+m_shk_6_dmosi
+m_shk_6_smiso
+m_shk_6_dmiso
+m_shk_7_smosi
+m_shk_7_dmosi
+m_shk_7_smiso
+m_shk_7_dmiso
+
+update_compile_order -fileset sources_1
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 10 23:24:08 2022...

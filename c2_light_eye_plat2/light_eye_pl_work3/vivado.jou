@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Mon Aug 22 23:19:50 2022
+# Process ID: 15896
+# Current directory: D:/e1_library/f2_light_eye_plat2/light_eye_pl_work3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4480 D:\e1_library\f2_light_eye_plat2\light_eye_pl_work3\light_eye_v2_13.xpr
+# Log file: D:/e1_library/f2_light_eye_plat2/light_eye_pl_work3/vivado.log
+# Journal file: D:/e1_library/f2_light_eye_plat2/light_eye_pl_work3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/e1_library/f2_light_eye_plat2/light_eye_pl_work3/light_eye_v2_13.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation

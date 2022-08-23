@@ -1,0 +1,3 @@
+int chck_bram(
+
+);
