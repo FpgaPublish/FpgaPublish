@@ -1,0 +1,10 @@
+debug/main.o
+debug/mainwindow.o
+debug/udp_subs.o
+debug/welcome_blck.o
+debug/welcome_mdle.o
+debug/qrc_video.o
+debug/moc_mainwindow.o
+debug/moc_udp_subs.o
+debug/moc_welcome_blck.o
+debug/moc_welcome_mdle.o

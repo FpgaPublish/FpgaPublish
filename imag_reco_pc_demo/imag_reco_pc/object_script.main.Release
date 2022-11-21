@@ -1,0 +1,10 @@
+release/main.o
+release/mainwindow.o
+release/udp_subs.o
+release/welcome_blck.o
+release/welcome_mdle.o
+release/qrc_video.o
+release/moc_mainwindow.o
+release/moc_udp_subs.o
+release/moc_welcome_blck.o
+release/moc_welcome_mdle.o
