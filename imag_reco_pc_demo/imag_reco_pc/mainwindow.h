@@ -45,6 +45,8 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    // wait signals solve
+    bool wait_signals(const char * signal, const unsigned int millisecond);
     // =====================================================
     // mesu bar param
     // --------------------------------------------

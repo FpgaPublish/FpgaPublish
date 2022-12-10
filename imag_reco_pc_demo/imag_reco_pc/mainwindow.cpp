@@ -19,7 +19,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-
+#include <QTimer>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -55,9 +55,27 @@ MainWindow::MainWindow(QWidget *parent)
 
 MainWindow::~MainWindow()
 {
+    delete u_udp_subs;
+    delete u_welcome_mdle;
     delete ui;
 }
 
+bool MainWindow::wait_signals(const char * signal, const unsigned int millisecond)
+{
+    bool result = true;
+
+    QEventLoop loop;
+    connect(this, signal, &loop, SLOT(quit()));
+
+    QTimer timer;
+    timer.setSingleShot(true);
+    connect(&timer, &QTimer::timeout, [&loop, &result]{ result = false; loop.quit();});
+    timer.start(millisecond);
+
+    loop.exec();
+    timer.stop();
+    return result;
+}
 
 void MainWindow::on_actionnet_triggered()
 {
@@ -76,8 +94,12 @@ void MainWindow::info_blck(quint32 n_code, QString s_info, QString s_text)
 
 void MainWindow::net_spd_driv(float net_spd)
 {
-    int n_spd = net_spd * 10000;
+    int n_spd = net_spd;
+    ui->ui_net_spd->setMaximum(500);
+    ui->ui_net_spd->setMinimum(0);
     ui->ui_net_spd->setValue(n_spd);
+    QString s_spd = QString("net spd is %1 pkg every second\n\r").arg(net_spd);
+    info_blck(CODE_WELCOME,"info",s_spd);
 }
 
 
@@ -91,5 +113,6 @@ void MainWindow::on_ui_info_log_textChanged()
 void MainWindow::on_ui_net_clicked()
 {
     u_udp_subs->send_udp_spd();
+
 }
 
